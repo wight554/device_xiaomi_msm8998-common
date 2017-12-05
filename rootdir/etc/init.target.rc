@@ -123,7 +123,7 @@ service vendor.qseecomd /vendor/bin/qseecomd
     shutdown critical
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
-    class main
+    class hal
     user root
     socket thermal-send-client stream 0666 system system
     socket thermal-recv-client stream 0660 system system
