@@ -184,3 +184,13 @@ service vendor.readmac /vendor/bin/readmac
     user system
     group system net_raw
     oneshot
+
+service vendor.amplifier-sh /vendor/bin/init.amplifier.sh /vendor/etc/silence_short.wav 1
+    class main
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:sys.boot_completed=1
+    start vendor.amplifier-sh

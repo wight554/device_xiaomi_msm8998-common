@@ -4,6 +4,9 @@ vendor/lib/soundfx/libqcbassboost.so|c4527fdcd3cd322cd91b03af10051b54d6c762a1
 vendor/lib/soundfx/libqcreverb.so|62bbe448996c769533210647a8df9baed5273e97
 vendor/lib/soundfx/libqcvirt.so|618403f5b50baffd525c430fdd916172d9e5b849
 
+# Amplifier calibration sound - from gemini OPR1.170623.032
+vendor/etc/silence_short.wav|12b2b5e31a1405c95f70b4e3e88d75d01e1ca883
+
 # Bluetooth - from OnePlus5T PKQ1.180716.001
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9f0bbbbc45cd57eed0175c1ff06b83473ea5c392
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
