@@ -29,6 +29,9 @@
 /(vendor|system/vendor)/bin/mtd@1.2                           u:object_r:hal_mtdservice_default_exec:s0
 /(vendor|system/vendor)/bin/tidad@1.1                         u:object_r:hal_tidaservice_default_exec:s0
 
+# Power HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.2-service.wahoo-libperfmgr u:object_r:hal_power_default_exec:s0
+
 # Remote storage
 /sys/kernel/debug/rmt_storage/rmts                            u:object_r:debugfs_rmts:s0
 
