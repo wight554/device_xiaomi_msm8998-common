@@ -109,10 +109,14 @@ on charger
     wait /dev/block/bootdevice/by-name/persist
     mount ext4 /dev/block/bootdevice/by-name/persist /persist nosuid nodev barrier=1
 
+    mount tmpfs tmpfs /data
+
     start vendor.hvdcp_opti
     start vendor.thermal-engine
     start vendor.qcom-post-boot
     start vendor.power_off_alarm
+
+    start charger
 
     setprop sys.usb.configfs 1
     setprop sys.usb.config adb
