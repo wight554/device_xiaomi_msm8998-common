@@ -35,4 +35,7 @@
         <item>GPS_LOCK=0</item>
     </string-array>
 
+    <!-- Remote server that can provide NTP responses. -->
+    <string translatable="false" name="config_ntpServer">2.android.pool.ntp.org</string>
+
 </resources>
