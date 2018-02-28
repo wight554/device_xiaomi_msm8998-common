@@ -156,6 +156,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 
+# Extended Filesystem Support
+TARGET_EXFAT_DRIVER := sdfat
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
 
