@@ -125,6 +125,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.qti.core_ctl_min_cpu=0 \
 	ro.vendor.qti.sys.fw.bg_apps_limit=60 \
 	sdm.debug.disable_skip_validate=1 \
+	sdm.debug.rotator_downscale=1 \
 	sdm.perf_hint_window=50
 
 # Radio
