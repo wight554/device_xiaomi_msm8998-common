@@ -41,6 +41,11 @@ on post-fs
     chown system graphics /sys/devices/virtual/graphics/fb0/idle_time
     write /sys/devices/virtual/graphics/fb0/idle_time 100
 
+    # dumpstate needs to read, vendor.health-hal needs to be able to RW
+    chown system system /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/cycle_counts_bins
+    # HardwareInfo needs to be able to read CC bins
+    chmod 644 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-02/800f000.qcom,spmi:qcom,pmi8998@2:qpnp,fg/cycle_counts_bins
+
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
 
@@ -289,6 +294,18 @@ on property:sys.post_boot.parsed=1
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hist_memory
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length
+
+    # UFS health
+    chmod 755 /sys/kernel/debug/ufshcd0
+    chmod 644 /sys/kernel/debug/ufshcd0/err_state
+    chmod 644 /sys/kernel/debug/ufshcd0/power_mode
+    chmod 644 /sys/kernel/debug/ufshcd0/host_regs
+    chmod 644 /sys/kernel/debug/ufshcd0/show_hba
+    chmod 644 /sys/kernel/debug/ufshcd0/dump_device_desc
+    chmod 755 /sys/kernel/debug/ufshcd0/stats
+    chmod 644 /sys/kernel/debug/ufshcd0/stats/req_stats
+    chmod 644 /sys/kernel/debug/ufshcd0/stats/query_stats
+    chmod 644 /sys/kernel/debug/ufshcd0/stats/err_stats
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start

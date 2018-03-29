@@ -58,6 +58,9 @@ on fs
     mkdir /persist/wlan_bt 0770 system system
     mkdir /persist/audio 0755 system system
 
+    # for android.hardware.health@2.0-service.xiaomi_msm8998 cycle count backup
+    mkdir /persist/battery 0700 system system
+
 on post-fs
     wait_for_prop sys.listeners.registered true
 
