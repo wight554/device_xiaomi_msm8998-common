@@ -51,15 +51,15 @@ on init
     write /sys/bus/msm_subsys/devices/subsys6/restart_level RELATED
 
 on fs
+    # Start HW service manager early
+    start hwservicemanager
+
     mount_all /vendor/etc/fstab.qcom --early
 
     restorecon_recursive /persist
     mkdir /persist/data 0700 system system
     mkdir /persist/wlan_bt 0770 system system
     mkdir /persist/audio 0755 system system
-
-    # Start HW service manager early
-    start hwservicemanager
 
 on post-fs
     wait_for_prop sys.listeners.registered true
@@ -85,6 +85,11 @@ on late-fs
     write /sys/block/sde/queue/nr_requests 256
     setprop sys.io.scheduler "cfq"
 
+    # Wait for hwservicemanager ready since fsck might be triggered in mount_all --late
+    # In such case, init won't responce the property_set from hwservicemanager and then
+    # cause services for bootanim not running.
+    wait_for_prop hwservicemanager.ready true
+    # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs-data
