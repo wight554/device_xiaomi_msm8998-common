@@ -126,6 +126,9 @@ on post-fs
     write /proc/sys/kernel/sched_autogroup_enabled 0
 
 on property:sys.boot_completed=1
+    # Set the default IRQ affinity to the silver cluster.
+    write /proc/irq/default_smp_affinity f
+
     # Enable UFS powersaving
     write /sys/devices/soc/${ro.boot.bootdevice}/clkscale_enable 1
     write /sys/devices/soc/${ro.boot.bootdevice}/clkgate_enable 1
