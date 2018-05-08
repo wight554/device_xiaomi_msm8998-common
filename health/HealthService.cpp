@@ -30,14 +30,17 @@
 #include <sys/stat.h>
 
 #include "CycleCountBackupRestore.h"
+#include "LearnedCapacityBackupRestore.h"
 
 using android::hardware::health::V2_0::StorageInfo;
 using android::hardware::health::V2_0::DiskStats;
 using ::device::xiaomi::msm8998::health::CycleCountBackupRestore;
+using ::device::xiaomi::msm8998::health::LearnedCapacityBackupRestore;
 
 static constexpr int kBackupTrigger = 20;
 
 static CycleCountBackupRestore ccBackupRestore;
+static LearnedCapacityBackupRestore lcBackupRestore;
 
 int cycle_count_backup(int battery_level)
 {
@@ -69,11 +72,14 @@ int cycle_count_backup(int battery_level)
 void healthd_board_init(struct healthd_config*)
 {
     ccBackupRestore.Restore();
+    lcBackupRestore.Restore();
 }
 
 int healthd_board_battery_update(struct android::BatteryProperties *props)
 {
-    return cycle_count_backup(props->batteryLevel);
+    cycle_count_backup(props->batteryLevel);
+    lcBackupRestore.Backup();
+    return 0;
 }
 
 const char kUFSHealthFile[] = "/sys/kernel/debug/ufshcd0/dump_health_desc";
