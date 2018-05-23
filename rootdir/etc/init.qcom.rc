@@ -117,12 +117,12 @@ on post-fs-data
     mkdir /data/vendor/location/mq 0770 gps gps
 
     # SSC/SLPI sensors
-    mkdir /persist/sensors 0775 system root
-    write /persist/sensors/sensors_settings 1
-    chown system root /persist/sensors/sensors_settings
-    chmod 0664 /persist/sensors/sensors_settings
-    chown system system /persist/PRSensorData.txt
-    chmod 0600 /persist/PRSensorData.txt
+    mkdir /mnt/vendor/persist/sensors 0775 system root
+    write /mnt/vendor/persist/sensors/sensors_settings 1
+    chown system root /mnt/vendor/persist/sensors/sensors_settings
+    chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
+    chown system system /mnt/vendor/persist/PRSensorData.txt
+    chmod 0600 /mnt/vendor/persist/PRSensorData.txt
 
     setprop vold.post_fs_data_done 1
 
