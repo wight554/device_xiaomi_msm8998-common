@@ -156,3 +156,6 @@ on property:sys.boot_completed=1
 
     # Run post poot script
     start vendor.qcom-post-boot
+
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
