@@ -269,16 +269,6 @@ service vendor.start_hci_filter /vendor/bin/wcnss_filter
     disabled
     writepid /dev/cpuset/system-background/tasks
 
-service vendor.perfd /vendor/bin/perfd
-    class main
-    user root
-    group root readproc system
-    socket perfd seqpacket 0666 root system
-    disabled
-
-on property:sys.post_boot.parsed=1
-    start vendor.perfd
-
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system

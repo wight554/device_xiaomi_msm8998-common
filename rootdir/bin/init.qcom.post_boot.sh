@@ -53,6 +53,3 @@ do
     echo 400 > $memlat/mem_latency/ratio_ceil
 done
 echo "cpufreq" > /sys/class/devfreq/soc:qcom,mincpubw/governor
-
-# Signal perfd that boot has completed
-setprop sys.post_boot.parsed 1
