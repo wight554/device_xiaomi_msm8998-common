@@ -310,31 +310,34 @@ vendor/lib64/libssd.so
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.msm8998.so
 
-# GPS
-vendor/bin/hw/vendor.qti.gnss@1.0-service
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/xtra-daemon
-vendor/etc/init/vendor.qti.gnss@1.0-service.rc
-vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libDRPlugin.so
-vendor/lib64/libdrplugin_client.so
-vendor/lib64/libevent_observer.so
-vendor/lib64/libflp.so
-vendor/lib64/libgeofence.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_ds_api.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/libulp2.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/libxtwifi_ulp_adaptor.so
-vendor/lib64/vendor.qti.gnss@1.0_vendor.so
+# GPS - from LA.UM.7.2.r1-03600-sdm660.0
+vendor/bin/hw/vendor.qti.gnss@2.0-service|a4ee4d610a4200b2869da23147712d98e08787b3
+vendor/bin/loc_launcher|4698b17ca2ee3abdf2ecb338ca9c20d7c03e31bb
+vendor/bin/lowi-server|862c6f05ebb1480968f6680f348cdbbdd686b3bf
+vendor/bin/xtra-daemon|612bf548f5a77adf7ab3fa11e364cf01df15bde9
+vendor/etc/init/vendor.qti.gnss@2.0-service.rc|5fef1b6f19950a06dc1ffd11f161f9587bb84054
+vendor/lib64/hw/vendor.qti.gnss@2.0-impl.so|e5a1de972e61fe8accd1789f3c682f59147b7426
+vendor/lib64/libdataitems.so|9953df5109b208aecb38d1349e7c54b4c35de484
+vendor/lib64/libDRPlugin.so|792f322df1627627830e9bc520a9d4d8a0f2c2e8
+vendor/lib64/libdrplugin_client.so|fb1ef09dd35cb8af0b70def74db0f1f9fb6052fe
+vendor/lib64/libevent_observer.so|abcd216f4ca17a958cba03c360163680812e03ec
+vendor/lib64/libflp.so|60425cde4bf676053195e180d9dd6e9d64cfcd44
+vendor/lib64/libgeofence.so|a7fb8797a140f36d5a58d93955288bc9c2b3633e
+vendor/lib64/libizat_client_api.so|c2e56ad8fee9dc5fae5411df0416c6d2e3254a9b
+vendor/lib64/libizat_core.so|58abf7f7ce3ed211cf94d62d4bf162a0443ad7d1
+vendor/lib64/liblbs_core.so|4017ecb4df36604a924be7c9cd607acd9e0ea1a5
+vendor/lib64/libloc_api_v02.so|1e79901bcbf30045bf76b00040c0a6389066c04e
+vendor/lib64/libloc_ds_api.so|6c6206851ebc3af37630ea2ce3ea15d17fbb671e
+vendor/lib64/liblocationservice.so|6e970b59c8c6ac9907f61a7c986fc27026df4390
+vendor/lib64/liblocationservice_glue.so|9d0a753b34e0cfad7a37dced6e4dcf67575b478d
+vendor/lib64/liblowi_client.so|a3cfdc0e382d5cce89ff2cbde056f9cba62cfc5b
+vendor/lib64/libulp2.so|feac397b27bf1f160c00330965d08a7941823025
+vendor/lib64/libxtadapter.so|b54280f7d31890af4a714ee14498ecdbbf3b45f6
+vendor/lib64/libxtwifi_ulp_adaptor.so|f94db5e9236f26a3a200d5e299da95c942e1ba44
+vendor/lib64/vendor.qti.gnss@1.0.so|57776eb3b6dce92da21456eb59773fdee08cc8c4
+vendor/lib64/vendor.qti.gnss@1.1.so|5a4dacdfc1152a4e24b86753e0da1733b78cea9d
+vendor/lib64/vendor.qti.gnss@1.2.so|a94e6f1b54bd0e7e5706287d83050720e9590092
+vendor/lib64/vendor.qti.gnss@2.0.so|bf0019b8f3f275bab608833097547f3430390606
 
 # Graphics - from LA.UM.7.2.r1-03600-sdm660.0
 vendor/lib64/egl/eglSubDriverAndroid.so|2cfc8728051d467c97919c342fc586223a5ec089

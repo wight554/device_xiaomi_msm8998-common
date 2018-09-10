@@ -103,11 +103,6 @@ QTI_LIBPERMISSIONS="$COMMON_BLOB_ROOT"/vendor/etc/permissions/qti_libpermissions
 sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" "$QTI_LIBPERMISSIONS"
 
 #
-# Treble sucks
-#
-patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0-v27.so $COMMON_BLOB_ROOT/vendor/lib64/vendor.qti.gnss@1.0_vendor.so
-
-#
 # Remove unused libmedia.so dependency in the IMS stack
 #
 DPLMEDIA="$COMMON_BLOB_ROOT"/vendor/lib64/lib-dplmedia.so
