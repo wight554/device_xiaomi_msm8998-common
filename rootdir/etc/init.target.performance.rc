@@ -105,9 +105,9 @@ on charger
 
     load_system_props
 
-    start hvdcp_opti
-    start thermal-engine
-    start qcom-post-boot
+    start vendor.hvdcp_opti
+    start vendor.thermal-engine
+    start vendor.qcom-post-boot
 
     setprop sys.usb.configfs 1
     setprop sys.usb.config adb
