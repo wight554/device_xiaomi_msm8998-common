@@ -245,12 +245,9 @@ vendor/firmware/a540_zap.elf
 vendor/firmware/a540_zap.mdt
 
 # GPS
-vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
-vendor/etc/init/vendor.qti.gnss@1.0-service.rc
-vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libDRPlugin.so
 vendor/lib64/libdrplugin_client.so
@@ -268,7 +265,6 @@ vendor/lib64/liblowi_client.so
 vendor/lib64/libulp2.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/libxtwifi_ulp_adaptor.so
-vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 
 # IPA
 vendor/firmware/ipa_fws.b00
