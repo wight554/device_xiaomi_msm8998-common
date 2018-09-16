@@ -17,8 +17,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     androidx.preference_preference
 
 LOCAL_RESOURCE_DIR := \
-    $(LOCAL_PATH)/res \
-    $(TOP)/packages/resources/devicesettings/res
+    $(LOCAL_PATH)/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
