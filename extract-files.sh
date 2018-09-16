@@ -79,12 +79,6 @@ MI_CAMERA_HAL="$COMMON_BLOB_ROOT"/vendor/lib/libMiCameraHal.so
 sed -i "s|system/etc/dualcamera.png|vendor/etc/dualcamera.png|g" "$MI_CAMERA_HAL"
 
 #
-# Remove unused libcamera_client.so dependency in libsac.so
-#
-SAC="$COMMON_BLOB_ROOT"/vendor/lib/libsac.so
-patchelf --remove-needed libcamera_client.so "$SAC"
-
-#
 # Correct VZW IMS library location
 #
 QTI_VZW_IMS_INTERNAL="$COMMON_BLOB_ROOT"/vendor/etc/permissions/qti-vzw-ims-internal.xml
@@ -101,12 +95,6 @@ sed -i "s|/system/framework/qcrilhook.jar|/vendor/framework/qcrilhook.jar|g" "$Q
 #
 QTI_LIBPERMISSIONS="$COMMON_BLOB_ROOT"/vendor/etc/permissions/qti_libpermissions.xml
 sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" "$QTI_LIBPERMISSIONS"
-
-#
-# Remove unused libmedia.so dependency in the IMS stack
-#
-DPLMEDIA="$COMMON_BLOB_ROOT"/vendor/lib64/lib-dplmedia.so
-patchelf --remove-needed libmedia.so "$DPLMEDIA"
 
 #
 # Replace libicuuc.so with libicuuc-v27.so for libMiCameraHal.so
