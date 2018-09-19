@@ -72,7 +72,7 @@ public class VibratorStrengthPreference extends Preference implements
     }
 
 	public static String getValue(Context context) {
-		return Utils.getFileValue(FILE_LEVEL, "2700");
+		return Utils.getFileValue(FILE_LEVEL, "3596");
 	}
 
 	private void setValue(String newValue, boolean withFeedback) {
