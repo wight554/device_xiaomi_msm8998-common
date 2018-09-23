@@ -454,13 +454,13 @@ vendor/lib/hw/sound_trigger.primary.msm8998.so
 vendor/lib/libsmwrapper.so
 
 # Media
--vendor/lib/libgpustats.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxVpp.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/libvqzip.so
--vendor/lib64/libgpustats.so
+-vendor/lib/libgpustats.so|703422d2fbdfa74c261be3413ae38d2775604358
+vendor/lib/libOmxEvrcDec.so|5a4b6e0ded018932b92c5562341eee39ffc14d7a
+vendor/lib/libOmxVpp.so|b9568fcbb44291ae4af2fec73980d54570c2cf2f
+vendor/lib/libvpphvx.so|7937bbf848ea2970ce61d4e5c75f31d7a27b867c
+vendor/lib/libvpplibrary.so|c7f5cd3c33c84188c4876699393747b1fe059205
+vendor/lib/libvqzip.so|c1c4f35456ff34b4baba373f18ed034a7d1e2721
+-vendor/lib64/libgpustats.so|79787eaed307f97ab3ce1864f6da39a096d9d153
 
 # NFC firmware
 vendor/lib/libpn553_fw.so|d032117e6645395327a5acd236bfd1bec56569c0
