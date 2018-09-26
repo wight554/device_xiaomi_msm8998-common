@@ -467,6 +467,9 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
+# Power-off charging daemon
+-sbin/charger:sbin/chargeonlymode;rootfs|9b12b1d169608a85aad3641d4cabc539a862f6ef
+
 # QMI
 etc/permissions/qti_libpermissions.xml:vendor/etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml:vendor/etc/permissions/qti_permissions.xml
