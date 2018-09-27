@@ -281,19 +281,6 @@ service vendor.tftp_server /vendor/bin/tftp_server
     class core
     user root
 
-on property:wc_transport.start_hci=true
-    start vendor.start_hci_filter
-
-on property:wc_transport.start_hci=false
-    stop vendor.start_hci_filter
-
-service vendor.start_hci_filter /vendor/bin/wcnss_filter
-    class late_start
-    user bluetooth
-    group bluetooth diag system wakelock
-    disabled
-    writepid /dev/cpuset/system-background/tasks
-
 on property:sys.post_boot.parsed=1
     # Setup permission for powerHAL
     chown system system /sys/devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
