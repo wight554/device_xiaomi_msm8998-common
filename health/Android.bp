@@ -47,4 +47,8 @@ cc_binary {
     ],
 
     header_libs: ["libhealthd_headers"],
+
+    overrides: [
+         "healthd",
+    ],
 }
