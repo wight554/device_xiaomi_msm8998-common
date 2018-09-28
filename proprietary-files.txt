@@ -186,6 +186,14 @@ vendor/lib64/libseemore.so
 vendor/lib64/libts_face_beautify_hal.so
 vendor/lib64/libubifocus.so
 
+# Camera (MIUI)
+lib/libCameraEffectJNI.so
+lib/libmorpho_group_portrait.so
+lib/libmorpho_groupshot.so
+lib/libmorpho_memory_allocator.so
+lib/libmorpho_panorama.so
+lib/libmorpho_panorama_gp.so
+
 # Camera eeprom
 vendor/lib/libSonyIMX386PdafLibrary.so
 
