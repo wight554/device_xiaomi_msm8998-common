@@ -241,8 +241,6 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libois_bu63164.so
 
 # Camera MIUI
--priv-app/MiuiCamera/MiuiCamera.apk|eb61f7548799480bc43d43345daa8d551162040f
-etc/default-permissions/miuicamera-permissions.xml|ccbb54169bf223c00e6628df6c061533e76fbce9
 lib/libCameraEffectJNI.so
 lib/libblurbuster.so
 lib/libfiltergenerator.so
