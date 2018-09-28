@@ -134,12 +134,16 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
-
-PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
+
+PRODUCT_PACKAGES += \
+    MiuiCamera
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/camera/etc/miuicamera-permissions.xml:system/etc/default-permissions/miuicamera-permissions.xml \
+    $(LOCAL_PATH)/camera/etc/com.android.camera.xml:system/etc/permissions/com.android.camera.xml
 
 # Display
 PRODUCT_PACKAGES += \
