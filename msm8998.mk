@@ -335,6 +335,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.msm8998 \
+    android.hardware.thermal@1.0-impl:64 \
+    android.hardware.thermal@1.0-service
+
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
