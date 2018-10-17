@@ -112,7 +112,7 @@
             frameRate="30" />
 
         <Audio codec="aac"
-            bitRate="156000"
+            bitRate="256000"
             sampleRate="48000"
             channels="2" />
     </EncoderProfile>
@@ -1050,7 +1050,7 @@
         maxHFRMode="120"  />
 
     <AudioEncoderCap name="aac" enabled="true"
-        minBitRate="8000" maxBitRate="96000"
+        minBitRate="8000" maxBitRate="256000"
         minSampleRate="8000" maxSampleRate="48000"
         minChannels="1" maxChannels="6" />
 
