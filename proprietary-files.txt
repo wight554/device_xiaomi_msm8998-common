@@ -271,8 +271,8 @@ lib64/libmorpho_memory_allocator.so
 lib64/libmorpho_panorama.so
 lib64/libmorpho_panorama_gp.so
 
-# Charger - from Dragon_00WW PPR1.180610.011-00WW_3_25B
-vendor/bin/hvdcp_opti|19e14f6fc658cfe8552759d4d0a1bf4a4db8fb49
+# Charger - from mata PPR1.181005.034-348
+vendor/bin/hvdcp_opti|f02d2c4c7026db05d08d640f5014d962378d24a8
 
 # CNE
 -priv-app/CNEService/CNEService.apk|cd015cf0e96e4fe3c62f840131f5af890f453d65
@@ -337,49 +337,53 @@ vendor/lib64/vendor.qti.gnss@1.1.so|127970a7c6e7b43a41bb40544f476a9dbe44ae30
 vendor/lib64/vendor.qti.gnss@1.2.so|bde82ab15ef4599eab9da48f0b2b8396cb6917e1
 vendor/lib64/vendor.qti.gnss@2.0.so|6ef9e9be6471b79f1aeddfe0e5a27627faf224ae
 
-# Graphics - from Dragon_00WW PPR1.180610.011-00WW_3_25B
-vendor/lib/egl/eglSubDriverAndroid.so|96b0cb59c4e6e089ac9dc27e84b6428e0b50bedb
-vendor/lib/egl/libEGL_adreno.so|bb2db6766b393777b8d37d81c2614e1166dd39af
-vendor/lib/egl/libGLESv1_CM_adreno.so|0930a64d8889c184de31a085539e1b8b28520a31
-vendor/lib/egl/libGLESv2_adreno.so|b2151530ba9c7b72f0bd0953f910b088380ea5dc
-vendor/lib/egl/libq3dtools_adreno.so|a2506b94eb0fe3c2bccc7c8e6d8b8d21bd314ae8
-vendor/lib/egl/libQTapGLES.so|601a5a37959a60dab32d643abb0b463031bc64a5
-vendor/lib/libadreno_utils.so|34023494194932a62c70d82c60d4f6cf2e64b58f
-vendor/lib/libbccQTI.so|aa1220cad9df3c39c0c14c4a36546342cc518ad1
-vendor/lib/libC2D2.so|a110bf0568eef9e49b251b7750cf6e51c3c85969
-vendor/lib/libc2d30_bltlib.so|a5a9a807c2ff607d472a0d3f4242fe487230c79b
-vendor/lib/libCB.so|512f5732659a1b8e860844b8e87f156e4e89cf1f
-vendor/lib/libgsl.so|2849df0ee52249c7d6e5ed869df064eff910c12c
-vendor/lib/libllvm-glnext.so|e052efb651cee5b8e6c46cc819c5ce3f902424d2
-vendor/lib/libllvm-qcom.so|826fd36b002899d55d5680f32fb942b3fe17e020
-vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
-vendor/lib/libqseed3.so|c60e08f5efa1e9aea339a7a5a6dccdc2d107f530
-vendor/lib/librs_adreno.so|41b2a1b35a8a9966728cea607bf5b7a8f568680d
-vendor/lib/librs_adreno_sha1.so|8e23f3b5bde889b846a2aa5702c21960f5359c7a
-vendor/lib/libRSDriver_adreno.so|7e6b61cb975de2029ea6debe4fe442852da06e00
-vendor/lib64/egl/eglSubDriverAndroid.so|baa2b8d500d0645642f40358be6c5e10fbabd193
-vendor/lib64/egl/libEGL_adreno.so|8c7de13558f96022520834663021f8e68b430aac
-vendor/lib64/egl/libGLESv1_CM_adreno.so|95497830d4e08c02a3b6d82bc7623f926d2ef9ed
-vendor/lib64/egl/libGLESv2_adreno.so|909b048229dc179e0c0943f9a9cf6dddb5e50abe
-vendor/lib64/egl/libq3dtools_adreno.so|4bd18c19a4d8376311983303b0971a7aa1334897
-vendor/lib64/egl/libq3dtools_esx.so|19d96756fda3f1ba0251c041120d1d4f3a5a8d03
-vendor/lib64/egl/libQTapGLES.so|fbef0ce0b36b67f4b2922876d89ab3af550ac69a
-vendor/lib64/libadreno_utils.so|4b9072beb7ce486163966d6a12d8edd7e92830b5
-vendor/lib64/libbccQTI.so|be1ae3a075c42dcb19bc6e1ecd7374f9aeae083c
-vendor/lib64/libC2D2.so|724684ac0e167bc729cbdea1ee9e21da248cfd58
-vendor/lib64/libc2d30_bltlib.so|aec01249095114006ce98857cf37fdcc47b5c3ae
-vendor/lib64/libCB.so|dd69162ba1a746623f54420d92754082f814b2b5
-vendor/lib64/libgsl.so|39bbfb10ef6c20feab0162ca2078d6bdab64ba6f
-vendor/lib64/libllvm-glnext.so|f2bfdf89502315b8bcf98f90d8a14b93308fb9ae
-vendor/lib64/libllvm-qcom.so|af571c2113bf5b74e58a808a33e4ec4e57915088
-vendor/lib64/libOpenCL.so|1e78c9b98378803703835a3e1cbfabf43318f341
-vendor/lib64/libqseed3.so|f95dd7b55de9401ce2f568e3ec18493daa5a6bfe
-vendor/lib64/librs_adreno.so|b6bc2274fc4079818f3124a694348a890c5d7b07
-vendor/lib64/librs_adreno_sha1.so|6c83309f281f220ea1c733af3d67403402f4c751
-vendor/lib64/libRSDriver_adreno.so|3d77fb21a40b98e908840aa89d044aea4f695694
+# Graphics - from mata PPR1.181005.034-348
+vendor/lib/egl/eglSubDriverAndroid.so|27a524ca79755259715ec3ec4c91e9da8feb9318
+vendor/lib/egl/libEGL_adreno.so|aecccddc7cad82e4616ca4e7510bf3cb6d0b07bc
+vendor/lib/egl/libGLESv1_CM_adreno.so|02913fc534f99d429591a5c9f35950b59c6e8fd3
+vendor/lib/egl/libGLESv2_adreno.so|1dd98e0a0f9d26d25c7830dd1640334b1a429813
+vendor/lib/egl/libq3dtools_adreno.so|0ff4a4961eb8c786051cecb5a966281d21a42b41
+vendor/lib/egl/libQTapGLES.so|39719e6487b11ef8b4fb0f960b5988a41ac2336b
+vendor/lib/libadreno_utils.so|e904a4609c0fd960b8fe532bf450367b48a3244b
+vendor/lib/libbccQTI.so|7c0a9100fda80120c3856ff6d4862c03be6c9d09
+vendor/lib/libC2D2.so|fda440c6a52c9cfddf0f7ad7a6afbf5a88e4cc98
+vendor/lib/libc2d30_bltlib.so|65f50d311ee88624810244f2eb730981677643c5
+vendor/lib/libc2d30-a5xx.so|3149e8346db14b15337fc4e3935e4b6a875e9530
+vendor/lib/libCB.so|811841387240d86656aedd83ea04c04473981b20
+vendor/lib/libgsl.so|92768e1986d69832ece78fe62c6f895742073907
+vendor/lib/libllvm-glnext.so|f85d6d41fad837d6ff4d92e194671ff6ff54cebe
+vendor/lib/libllvm-qcom.so|a64a67c1804b5981bed5829d5097dc3c9f881e9e
+vendor/lib/libllvm-qgl.so|f78717179967590983132c5c4fc61546078a5090
+vendor/lib/libOpenCL.so|d1699a590a52b11c469adcf66c1f1e9e66c7d739
+vendor/lib/librs_adreno_sha1.so|6e7fd4192adb0ce2a350facc55f4521ae7a2b847
+vendor/lib/librs_adreno.so|387d1052ee51c59fcf22b87ab03fd76ad5480679
+vendor/lib/libRSDriver_adreno.so|c3ca4f779308a0f450b01e4b872de62d0aaea17c
+vendor/lib64/egl/eglSubDriverAndroid.so|6e13bc9eec74aaa792b5a359967a12df52a41c65
+vendor/lib64/egl/libEGL_adreno.so|06c37eb7763fd4f91f59cd9c6d1f057ab7c41f2b
+vendor/lib64/egl/libGLESv1_CM_adreno.so|2f63eeafb33740b046619b44e9a88e1f9b2a4926
+vendor/lib64/egl/libGLESv2_adreno.so|13f1995d5fa4b953b305bf48d7c2aeb900efb0e7
+vendor/lib64/egl/libq3dtools_adreno.so|66cca9b89ee69925f9c5528fcc1802734b32a793
+vendor/lib64/egl/libq3dtools_esx.so|8a05090ba7914a11d2c2cf9752c80d759008d36b
+vendor/lib64/egl/libQTapGLES.so|928b00da8a83930f79b93546fdadb5b443d5002d
+vendor/lib64/libadreno_utils.so|ef6623b313e53710400aa9afdfa3ff03508f54af
+vendor/lib64/libbccQTI.so|9341df956ae5f5e24d2944f1bca3044a1a185c5e
+vendor/lib64/libC2D2.so|0a8d13db8524e55b90642df5e9149c342682568a
+vendor/lib64/libc2d30_bltlib.so|6bb0219b5211cd1b7de8466de871e13230ecfbd1
+vendor/lib64/libc2d30-a5xx.so|e5980fdaaea547ce9acbd627fdcd9834ac62907a
+vendor/lib64/libCB.so|c162fd6b1e3deb5f1619cd6371c57a26f8a04b0c
+vendor/lib64/libgsl.so|6e882852250b5bb3d22afcb3a1064a9621a8b794
+vendor/lib64/libllvm-glnext.so|b2d0e1da1a88e40a54574be0bbc28274042848ab
+vendor/lib64/libllvm-qcom.so|68d4515a13305f1f4e30f6623dee5656f6265c2d
+vendor/lib64/libllvm-qgl.so|92f6305e30076b3fd36ffc1259cca6ac7aa43015
+vendor/lib64/libOpenCL.so|dd448c2d292c83f8514e2afa96d4cdd301d1e465
+vendor/lib64/librs_adreno_sha1.so|29085a4ce4d603564b2768d3b3cee01b6ab02edb
+vendor/lib64/librs_adreno.so|7088821ba4613c55ab76676250fb5381ebf3b116
+vendor/lib64/libRSDriver_adreno.so|ff1eb1765548b027e59f9569ddac6b87dd6448d3
 
 # Graphics (SDM) - from Dragon_00WW PPR1.180610.011-00WW_3_25B
+vendor/lib/libqseed3.so|c60e08f5efa1e9aea339a7a5a6dccdc2d107f530
 -vendor/lib/libsdm-disp-vndapis.so|31b8df32d8091ef0390352b118e59bbde3d4acc1
+vendor/lib64/libqseed3.so|f95dd7b55de9401ce2f568e3ec18493daa5a6bfe
 vendor/lib64/libsdm-color.so|5c8cda1e79cd46cd29e45d689017e24a440800b7
 vendor/lib64/libsdm-diag.so|25bab19a8c4453b3d20e3e1a71a0e8d3675b17b4
 -vendor/lib64/libsdm-disp-vndapis.so|6b0ee25367d386ccc1b42ea941f1da439a48b3ec
@@ -450,14 +454,14 @@ vendor/lib64/hw/keystore.msm8998.so|bab9d7933cb9cc5df565ecbb341d76fb21e2d77c
 vendor/lib/hw/sound_trigger.primary.msm8998.so|bee438f6790122c7bb495726dc3a745c921d8d1a
 vendor/lib/libsmwrapper.so|9fe16420fb46e7641bf8a0b172db282c745cdfb4
 
-# Media - from Dragon_00WW PPR1.180610.011-00WW_3_25B
--vendor/lib/libgpustats.so|703422d2fbdfa74c261be3413ae38d2775604358
-vendor/lib/libOmxEvrcDec.so|5a4b6e0ded018932b92c5562341eee39ffc14d7a
-vendor/lib/libOmxVpp.so|42cc01f4ee6068d2d412959076af898e57b529f1
-vendor/lib/libvpphvx.so|7937bbf848ea2970ce61d4e5c75f31d7a27b867c
-vendor/lib/libvpplibrary.so|fc33228da9d1be65f7244c787e0ce20fc8bee654
-vendor/lib/libvqzip.so|c1c4f35456ff34b4baba373f18ed034a7d1e2721
--vendor/lib64/libgpustats.so|79787eaed307f97ab3ce1864f6da39a096d9d153
+# Media - from mata PPR1.181005.034-348
+-vendor/lib/libgpustats.so|62347d048a9b06ea998c8037c4476c331eeeae88
+vendor/lib/libOmxEvrcDec.so|9771e69ed6ac031dd555e012d327fcb7cace2930
+vendor/lib/libOmxVpp.so|512612ec123c42e0978d7198ad58f719f0c61744
+vendor/lib/libvpphvx.so|fb217e4af9b3e31863b439063fb859202e70883c
+vendor/lib/libvpplibrary.so|2b9717a0c18dba18e6708cf79d1e1ab30601bee5
+vendor/lib/libvqzip.so|21055a646230310c6236866c3ddc38f1e1ff3a26
+-vendor/lib64/libgpustats.so|020fc92873b886d95ee442eaf9c5083aa00a4350
 
 # NFC firmware
 vendor/lib/libpn553_fw.so|d032117e6645395327a5acd236bfd1bec56569c0
@@ -574,10 +578,10 @@ vendor/lib/libthermalclient.so
 vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Time services - from Dragon_00WW PPR1.180610.011-00WW_3_25B
--vendor/app/TimeService/TimeService.apk|25337e4160093a998c0e4cfced1c1a6c51177dff
-vendor/bin/time_daemon|757b977a7e6fab2c56b669f0922a74d5af28dd27
-vendor/lib64/libtime_genoff.so|de6f521a43174b748043790cc23181e88560fe32
+# Time services - from mata PPR1.181005.034-348
+-vendor/app/TimeService/TimeService.apk|ec67abd45f6a2c5046bc5e3a428fcce034b45c8a
+vendor/bin/time_daemon|e89953fdafff55f1a95c63bc33b0e111573a4806
+vendor/lib64/libtime_genoff.so|8a1eea2a9102b22c54d983b42ef7dfa63f0f5e9e
 
-# Wi-Fi - from Dragon_00WW PPR1.180610.011-00WW_3_25B
-vendor/bin/cnss-daemon|f4603c9502fcf58dcaa285b37ce61bcf8ea97591
+# Wi-Fi - from mata PPR1.181005.034-348
+vendor/bin/cnss-daemon|3e39873e3f37b1b9b37c921e45ecfefda1728d62
