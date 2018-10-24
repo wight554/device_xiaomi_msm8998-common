@@ -135,8 +135,8 @@ on post-fs-data
     chmod 2770 /data/system/perfd
 
     # NFC local data and nfcee xml storage
-    mkdir /data/vendor/nfc 0770 nfc nfc
-    mkdir /data/vendor/nfc/param 0770 nfc nfc
+    mkdir /data/nfc 0770 nfc nfc
+    mkdir /data/nfc/param 0770 nfc nfc
 
     # Create /data/vendor/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
