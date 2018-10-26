@@ -1,37 +1,6 @@
 {
   "Nodes": [
     {
-      "Name": "GPUMaxFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
-      "Values": [
-        "342000000",
-        "414000000",
-        "515000000",
-        "710000000"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "GPUMinFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
-      "Values": [
-        "515000000",
-        "414000000",
-        "257000000"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "GPUBusMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,gpubw/min_freq",
-      "Values": [
-        "11863",
-        "7759",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "TASchedtuneBoost",
       "Path": "/dev/stune/top-app/schedtune.boost",
       "Values": [
@@ -85,12 +54,6 @@
     }
   ],
   "Actions": [
-    {
-      "PowerHint": "SUSTAINED_PERFORMANCE",
-      "Node": "GPUMaxFreq",
-      "Duration": 0,
-      "Value": "342000000"
-    },
     {
       "PowerHint": "INTERACTION",
       "Node": "TASchedtuneBoost",
