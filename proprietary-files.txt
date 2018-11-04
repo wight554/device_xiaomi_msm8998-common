@@ -308,34 +308,27 @@ vendor/lib64/libssd.so
 # Gatekeeper - from mata PPR1.181005.034-348
 vendor/lib64/hw/gatekeeper.msm8998.so|4f686bca5e35d94861c0f6710cfb10240390f6e3
 
-# GPS - from Dragon_00WW PPR1.180610.011-00WW_3_25B
-vendor/bin/hw/vendor.qti.gnss@2.0-service|f68a6c0ae8f87af6cefe5212885e0d35207ca2ba
-vendor/bin/loc_launcher|2b6c3074ea0ca7add51cef34c225aeca0e61b611
-vendor/bin/lowi-server|862c6f05ebb1480968f6680f348cdbbdd686b3bf
-vendor/bin/xtra-daemon|612bf548f5a77adf7ab3fa11e364cf01df15bde9
-vendor/etc/init/vendor.qti.gnss@2.0-service.rc|5fef1b6f19950a06dc1ffd11f161f9587bb84054
-vendor/lib64/hw/vendor.qti.gnss@2.0-impl.so|28fdeed5f276d00e5d19d15f75a38f7a7ae491fa
-vendor/lib64/libdataitems.so|574f3ab4ca1f9974cef665db762f56978d39a508
-vendor/lib64/libDRPlugin.so|792f322df1627627830e9bc520a9d4d8a0f2c2e8
-vendor/lib64/libdrplugin_client.so|fb1ef09dd35cb8af0b70def74db0f1f9fb6052fe
-vendor/lib64/libevent_observer.so|e3ca4fb9b05147e1e2e213712477527dcaa743de
-vendor/lib64/libflp.so|60425cde4bf676053195e180d9dd6e9d64cfcd44
-vendor/lib64/libgeofence.so|a7fb8797a140f36d5a58d93955288bc9c2b3633e
-vendor/lib64/libizat_client_api.so|dbd2ec92bd1c61f511c9cc00cfd1de9a2b59e27f
-vendor/lib64/libizat_core.so|58abf7f7ce3ed211cf94d62d4bf162a0443ad7d1
-vendor/lib64/liblbs_core.so|5d4531fc52967e027d77f5f5e9b8b257d639c47e
-vendor/lib64/libloc_api_v02.so|2393690f4289a80c8eb193d210a21d074946eebb
-vendor/lib64/libloc_ds_api.so|3aaf82efb0eaf848e71b80a2cdb6c05d21bfbc8e
-vendor/lib64/liblocationservice.so|d839ec8e9dd68d05d1b680dca79ec40fca861429
-vendor/lib64/liblocationservice_glue.so|e472e6e039f574c68731d8888c5820a54fcbf0fa
-vendor/lib64/liblowi_client.so|a3cfdc0e382d5cce89ff2cbde056f9cba62cfc5b
-vendor/lib64/libulp2.so|19346fb4327fe3d8715609293945065c2da5a284
-vendor/lib64/libxtadapter.so|b54280f7d31890af4a714ee14498ecdbbf3b45f6
-vendor/lib64/libxtwifi_ulp_adaptor.so|f94db5e9236f26a3a200d5e299da95c942e1ba44
-vendor/lib64/vendor.qti.gnss@1.0.so|433844935724722a852a795045a3fb8722ec9a02
-vendor/lib64/vendor.qti.gnss@1.1.so|127970a7c6e7b43a41bb40544f476a9dbe44ae30
-vendor/lib64/vendor.qti.gnss@1.2.so|bde82ab15ef4599eab9da48f0b2b8396cb6917e1
-vendor/lib64/vendor.qti.gnss@2.0.so|6ef9e9be6471b79f1aeddfe0e5a27627faf224ae
+# GPS - from mata PPR1.181005.034-348
+vendor/bin/hw/android.hardware.gnss@1.0-service-qti|127fa86119950fdfe5e36e652fb72ddccfcce795
+vendor/bin/loc_launcher|f0690a0ae0e1eebb7ce353acf284435537146a80
+vendor/bin/lowi-server|baa83a4f0afd1c30257f2cdcdb953698b40d94cd
+vendor/bin/xtra-daemon|d288f63bc090c49b574df9b7f75c04426b37e0f0
+vendor/etc/init/android.hardware.gnss@1.0-service-qti.rc|bf09bd58e06bf669580368acb9c9c7ba3504bce8
+vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so|eb235c3a08a146553fa48b2700b56e9cd882e081
+vendor/lib64/libflp.so|8c715c9a921a6955f8aa0e8ae22e373ff02c1a42
+vendor/lib64/libgeofence.so|9d5a441ffc80638fb539fd67ebbabcf41e57bcc4
+vendor/lib64/libgnss.so|6b76bb085f67503a221955682eacb0423d0f5306
+vendor/lib64/libgps.utils.so|f5c552a8e3477c2cd8fb3857f6a0200034601482
+vendor/lib64/libizat_core.so|183e58346e4001905e53dcf98f39c4dc6aa728a1
+vendor/lib64/liblbs_core.so|9a41138ccb565bcdd75e62c5fcafad2414c5e5fd
+vendor/lib64/libloc_api_v02.so|9b9576e3758f88969086fa3f239f2e405f41562d
+vendor/lib64/libloc_core.so|b386fc99e2e40ee3d882358cac83c921672387f7
+vendor/lib64/libloc_ds_api.so|832eb45b5df058acc71bbae3c63e124e0a4a5278
+vendor/lib64/libloc_pla.so|ad0752dda192b0689258c5a25623b8a8926dd241
+vendor/lib64/libloc_stub.so|d5d99f8607447eed1b0c740ea8982de786249656
+vendor/lib64/liblocation_api.so|cb8fda3b169ea477e069f80e019ec72b5d77efeb
+vendor/lib64/liblowi_client.so|bbde835a10207abbc70e1deab1d0bb16577151d6
+vendor/lib64/liblowi_wifihal.so|24ff07ad1a5e190c7485bd1d0c60e8f63cb1fee9
 
 # Graphics - from mata PPR1.181005.034-348
 vendor/lib/egl/eglSubDriverAndroid.so|27a524ca79755259715ec3ec4c91e9da8feb9318
