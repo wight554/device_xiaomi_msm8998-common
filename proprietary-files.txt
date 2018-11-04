@@ -61,9 +61,9 @@ lib64/com.qualcomm.qti.ant@1.0.so|199481b290856fb63f5c5bf6def426b43309becb
 vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
-# Bluetooth aptX - from Dragon_00WW PPR1.180610.011-00WW_3_25B
-vendor/lib64/libaptX_encoder.so|a407a92a6eb467886c3970629ebcab4db95b7600
-vendor/lib64/libaptXHD_encoder.so|76eb03998f9b4f98029a4408076685892726e45a
+# Bluetooth aptX - from mata PPR1.181005.034-348
+lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
+lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
 # Bluetooth FM
 vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
