@@ -136,13 +136,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.radio.apm_sim_not_pwdn=1 \
 	persist.radio.dynamic_sar=false \
 	persist.radio.multisim.config=dsds \
 	persist.rmnet.data.enable=true \
 	persist.vendor.data.mode=concurrent \
 	persist.vendor.ims.dropset_feature=0 \
 	persist.vendor.radio.add_power_save=1 \
+	persist.vendor.radio.apm_sim_not_pwdn=1 \
 	persist.vendor.radio.custom_ecc=1 \
 	persist.vendor.radio.force_on_dc=true \
 	persist.vendor.radio.rat_on=combine \
@@ -175,7 +175,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Time services
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.delta_time.enable=true
+	persist.vendor.delta_time.enable=true
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
