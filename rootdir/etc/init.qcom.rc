@@ -200,10 +200,6 @@ on boot
     mkdir /dev/socket/qmux_bluetooth 2770 bluetooth bluetooth
     mkdir /dev/socket/qmux_gps 2770 gps gps
 
-    mkdir /persist/bluetooth 0770 bluetooth bluetooth
-    mkdir /persist/misc 0770 system system
-    mkdir /persist/alarm 0770 system system
-
     # Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
@@ -236,9 +232,6 @@ on boot
     # connections on high-throughput links get dropped when
     # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
-
-    # Create directory used for display
-    mkdir /persist/display 0770 system graphics
 
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
