@@ -382,44 +382,44 @@ vendor/lib64/vendor.qti.gnss@1.1.so|4313edc2c92a94e1529c9a71ebd56926b0fffbc9
 vendor/lib64/vendor.qti.gnss@1.2.so|203b46a7fb8e2590d29448433254b28386e1bfda
 vendor/lib64/vendor.qti.gnss@2.0.so|ce21dda6d94d1441433893614644fdcd9d293cee
 
-# Graphics - from jasmine PKQ1.180904.001
-vendor/lib/egl/eglSubDriverAndroid.so|c8ffb5031734026961217586a5caf5becfa99a6d
-vendor/lib/egl/libEGL_adreno.so|bb2db6766b393777b8d37d81c2614e1166dd39af
-vendor/lib/egl/libGLESv1_CM_adreno.so|0930a64d8889c184de31a085539e1b8b28520a31
-vendor/lib/egl/libGLESv2_adreno.so|005ca25494f36aa4e8298f8a8ff9b8c4ae6bd1e4
-vendor/lib/egl/libq3dtools_adreno.so|a2506b94eb0fe3c2bccc7c8e6d8b8d21bd314ae8
-vendor/lib/egl/libQTapGLES.so|7641cd4f894d86f53394bcdc421ecae254afaf30
-vendor/lib/libadreno_utils.so|34023494194932a62c70d82c60d4f6cf2e64b58f
-vendor/lib/libbccQTI.so|aa1220cad9df3c39c0c14c4a36546342cc518ad1
-vendor/lib/libC2D2.so|a110bf0568eef9e49b251b7750cf6e51c3c85969
-vendor/lib/libc2d30_bltlib.so|e9767a3e4e674d42f23f5482471d38973e038d45
-vendor/lib/libCB.so|ec481cf472b0cfc568b909be92b7da5a68405f70
-vendor/lib/libgsl.so|2849df0ee52249c7d6e5ed869df064eff910c12c
-vendor/lib/libllvm-glnext.so|aaf39c5b6fd424edc773c64ad06de2e1dfbd9600
-vendor/lib/libllvm-qcom.so|ba0f181d031bcdd479bc007e33c5490cf5a34723
+# Graphics - from taimen PQ1A.181105.017.A1
+vendor/lib/egl/eglSubDriverAndroid.so|0c481fac7f46cdab13f8d218635a0ef669f61a46
+vendor/lib/egl/libEGL_adreno.so|674870270a61f9380c6b270343c1dd9d3c3a9fc0
+vendor/lib/egl/libGLESv1_CM_adreno.so|ed3c292dabb987edbbc312a47700dd9ae6e6e45c
+vendor/lib/egl/libGLESv2_adreno.so|d28e875a340164df92632711a2f78fdc3342d695
+vendor/lib/egl/libq3dtools_adreno.so|2e354b833fb00bb0ec7e41a1eb192963be998402
+vendor/lib/libadreno_utils.so|644157784fed178bffcf85bff43ce69f638539cf
+vendor/lib/libbccQTI.so|8b1d4d32c520beca54714644db90580973236b75
+vendor/lib/libC2D2.so|d451a38dffc493508c3a385023d52456d95aed60
+vendor/lib/libc2d30_bltlib.so|67f47c7e8d41f48dda9bb2ae50c99a3428a96fc0
+vendor/lib/libCB.so|6c65747d40bf522b2f29ea6c2d42c1240d8d7151
+vendor/lib/libgsl.so|1ccd6830c797aea98769e666d474d0c1713d1bc8
+vendor/lib/libllvm-glnext.so|1770f8ab6c620363b5b8dda206486c2eb043217e
+vendor/lib/libllvm-qcom.so|f0738474547b47bef7460e066d569be44a0f2dc4
+vendor/lib/librs_adreno_sha1.so|74e9543c7263b6fd80014ce77e0aa17a4552b850
+vendor/lib/librs_adreno.so|24e8e0839f8c7350b675f669d5474393f2670f66
+vendor/lib/libRSDriver_adreno.so|0a804a57045dc2aaa0a74de4ebd915a93e9c5cb6
+vendor/lib64/egl/eglSubDriverAndroid.so|8325ec342415173c1a5abd631f782e73a3c926cb
+vendor/lib64/egl/libEGL_adreno.so|1a309136e2b671dfe11c92380163afc06ddd83f0
+vendor/lib64/egl/libGLESv1_CM_adreno.so|900b7477948474cd9ee9026c7a2050f09e847de3
+vendor/lib64/egl/libGLESv2_adreno.so|5f51a75376baaf465df89930d94f549d182f6d58
+vendor/lib64/egl/libq3dtools_adreno.so|36beecbbf121ac1b26fd65cde4fd3fbb9f266389
+vendor/lib64/egl/libq3dtools_esx.so|0773ef8c853e9d2fbf52c4326e4ab12aca6a9b81
+vendor/lib64/libadreno_utils.so|af84071cd4f2385faf1564806ea06f1f38a021c6
+vendor/lib64/libbccQTI.so|b2841e5a4919b7304e855aba09bcf004b5a660a0
+vendor/lib64/libC2D2.so|6c2c7ec644ad545a61dfd0a18a90f4b776b2efa5
+vendor/lib64/libc2d30_bltlib.so|c598a6209b9916ce816c50ba3154d177cda10336
+vendor/lib64/libCB.so|3bb419dbc9e88a7432dcc6c5c0c737618263cc2a
+vendor/lib64/libgsl.so|a5b2cc2a6154844a515871fe1bbba9a2dd8b8200
+vendor/lib64/libllvm-glnext.so|64cb9d68365d06bfdd2657f59aaf2808c89d7ce3
+vendor/lib64/libllvm-qcom.so|1bcfe0817ab425eb96e06ff0a9f807dd6c449476
+vendor/lib64/librs_adreno_sha1.so|ba9d6f624454b9381172e3373f079225d0ecf9f4
+vendor/lib64/librs_adreno.so|f52f1881d3813f4ab16e9c808404ced996e97f54
+vendor/lib64/libRSDriver_adreno.so|664e19e3e3b9ac20564ccb5060bcfd0a8e70152a
+
+# Graphics (OpenCL) - from jasmine PKQ1.180904.001
 vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
-vendor/lib/librs_adreno_sha1.so|3eab25ba145381aa9ac3dd4d913152fb181a74d3
-vendor/lib/librs_adreno.so|41b2a1b35a8a9966728cea607bf5b7a8f568680d
-vendor/lib/libRSDriver_adreno.so|7e6b61cb975de2029ea6debe4fe442852da06e00
-vendor/lib64/egl/eglSubDriverAndroid.so|baa2b8d500d0645642f40358be6c5e10fbabd193
-vendor/lib64/egl/libEGL_adreno.so|8c7de13558f96022520834663021f8e68b430aac
-vendor/lib64/egl/libGLESv1_CM_adreno.so|95497830d4e08c02a3b6d82bc7623f926d2ef9ed
-vendor/lib64/egl/libGLESv2_adreno.so|8027d82d27298e78a9fdb67fd2232a0091623d1f
-vendor/lib64/egl/libq3dtools_adreno.so|4bd18c19a4d8376311983303b0971a7aa1334897
-vendor/lib64/egl/libq3dtools_esx.so|19d96756fda3f1ba0251c041120d1d4f3a5a8d03
-vendor/lib64/egl/libQTapGLES.so|dac820eea4d54f98f7e20a49b82404de6f09743b
-vendor/lib64/libadreno_utils.so|4b9072beb7ce486163966d6a12d8edd7e92830b5
-vendor/lib64/libbccQTI.so|be1ae3a075c42dcb19bc6e1ecd7374f9aeae083c
-vendor/lib64/libC2D2.so|724684ac0e167bc729cbdea1ee9e21da248cfd58
-vendor/lib64/libc2d30_bltlib.so|e950f918802d3d3e656ab4f0fe731bb60e1b357e
-vendor/lib64/libCB.so|7f9ee00ababa07845d200a991d9ec839d364e8f9
-vendor/lib64/libgsl.so|39bbfb10ef6c20feab0162ca2078d6bdab64ba6f
-vendor/lib64/libllvm-glnext.so|6bad98f9d784d7c50a3d47fe61dbabd6164cc0bc
-vendor/lib64/libllvm-qcom.so|4e9dc8128379692407bf730f1b1ebdd3307bd5c0
 vendor/lib64/libOpenCL.so|1e78c9b98378803703835a3e1cbfabf43318f341
-vendor/lib64/librs_adreno_sha1.so|1eb6385f291f6a611ec7096b3b7cfaeb9a08c9f3
-vendor/lib64/librs_adreno.so|b6bc2274fc4079818f3124a694348a890c5d7b07
-vendor/lib64/libRSDriver_adreno.so|3d77fb21a40b98e908840aa89d044aea4f695694
 
 # Graphics (SDM) - from jasmine PKQ1.180904.001
 vendor/lib/libqseed3.so|c60e08f5efa1e9aea339a7a5a6dccdc2d107f530
@@ -515,7 +515,7 @@ vendor/lib/libvqzip.so|c1c4f35456ff34b4baba373f18ed034a7d1e2721
 # NFC firmware - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
 vendor/lib/libpn553_fw.so|c0b53ec8b330cd2c077b2bea6a7d5284151ec513
 
-# Perf
+# Perf - from taimen PQ1A.181105.017.A1
 vendor/etc/perf-profile0.conf|02204355bf29ceb0460cd53e6716552bb9d9b05f
 vendor/lib/libqti-perfd-client.so|f277daf9632b4d4c22a27abec2c4d0ccf776892d
 vendor/lib64/libqti-perfd-client.so|eaf678de5d7d0de194a263db1835b1f582452419
