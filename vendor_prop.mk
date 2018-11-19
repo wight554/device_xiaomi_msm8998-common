@@ -136,7 +136,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.radio.dynamic_sar=false \
 	persist.radio.multisim.config=dsds \
 	persist.rmnet.data.enable=true \
 	persist.vendor.data.mode=concurrent \
@@ -144,14 +143,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.radio.add_power_save=1 \
 	persist.vendor.radio.apm_sim_not_pwdn=1 \
 	persist.vendor.radio.custom_ecc=1 \
-	persist.vendor.radio.force_on_dc=true \
 	persist.vendor.radio.rat_on=combine \
-	persist.vendor.radio.redir_party_num=1 \
-	persist.vendor.radio.report_codec=1 \
 	persist.vendor.radio.sib16_support=1 \
+	persist.vendor.radio.snapshot_enabled=1 \
+	persist.vendor.radio.snapshot_timer=5 \
 	rild.libpath=/vendor/lib64/libril-wrapper.so \
 	ro.telephony.default_cdma_sub=0 \
-	ro.telephony.default_network=22,22 \
+	ro.telephony.default_network=9,9 \
 	ro.vendor.use_data_netmgrd=true \
 	telephony.lteOnCdmaDevice=1 \
 	vendor.voice.path.for.pcm.voip=true
