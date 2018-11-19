@@ -122,7 +122,7 @@ service vendor.qseecomd /vendor/bin/qseecomd
     group root
     shutdown critical
 
-service vendor.thermal-engine /vendor/bin/thermal-engine -T
+service vendor.thermal-engine /vendor/bin/thermal-engine
     class main
     user root
     socket thermal-send-client stream 0666 system system
