@@ -479,6 +479,7 @@ vendor/lib64/lib-rtpsl.so|a985bf2c0956b43b545ff273ff8970ff7391a663
 vendor/lib64/lib-siputility.so|094de8864c09e2b13fe1f8927adf72bd29f8cfda
 vendor/lib64/lib-uceservice.so|282c6fc459faf8cdf643ab9c8904f7b055562802
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so|777cb6b407ff82945aa5e8def7bc1f2622e30b91
+vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so|6ff99e13b16cd4c58e97e0e3e03eb713182edb25
 vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so|a40f7576ec1a9f50c30c94f61e7b00163dbc3d6f
 vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so|6683736cfe33daecf6835642cc55c51d30c42d62
 vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so|70dfe2c0221d35a82b22eba3e7a6614717fbe723
