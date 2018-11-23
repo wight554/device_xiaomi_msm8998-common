@@ -29,10 +29,12 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|7d163c35a9deee2801070ed50c6625709c3e0b65
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|1594b679eb1c791e0f4e0dbb9115b599a8553401
 
+# Audio (ACDB)
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+
 # Audio libraries - from jasmine PKQ1.180904.001
-vendor/lib/libacdb-fts.so|84ae662a62af6dbecd34898a3d40a65b90b1ab51
-vendor/lib/libacdbloader.so|828e76b60eead184c5e8401c72bbe6eea753fdf6
-vendor/lib/libacdbrtac.so|a22b2e0f26a37e22a9e83ecec88764322a5f54a4
 vendor/lib/libadiertac.so|25ae1c15162116bfb482e677343c33c6009ec62c
 vendor/lib/libadm.so|8db603b99c5c5fe1d2ca4fcc6663bf3eb0ff325d
 vendor/lib/libaudcal.so|04247071e078e8e182728f72241873ef2f27dffc
