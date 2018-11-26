@@ -1,25 +1,23 @@
-# ADSP - from jasmine PKQ1.180904.001
+# ADSP - from OnePlus5T PKQ1.180716.001
 vendor/bin/adsprpcd|8b439846f016decb7519e5fd5cb2c86e192af036
-vendor/lib/libadsprpc.so|756fc8ea0395866ee578030ac72fddedba288f97
-vendor/lib/libfastcvadsp_stub.so|7811d12d68ec3f9fcbd05f55264b6dcec61bc75b
-vendor/lib/libfastcvopt.so|d76563220d8d504a9dce1091a52482a8d932858d
-vendor/lib64/libadsprpc.so|66ac8f836101bc7563432d168890827d878acd42
+vendor/lib/libadsprpc.so|612dd6e96f61015f0e863b3f421baec934170b3a
+vendor/lib/libfastcvadsp_stub.so|dcd0794b25adc5b6ac249d6b4267dfd57cdef538
+vendor/lib/libfastcvopt.so|445f0f2a63d8a4806a86c9bb4b56bfa31d6dd8ee
+vendor/lib64/libadsprpc.so|be8eb3ed2e38c4204f3c066a0dd5a00870a2be9a
 vendor/lib64/libadsp_default_listener.so|d28ea3a0509c13ff75c700efe1107bb2d2481eb6
 
-# ADSP modules - from jasmine PKQ1.180904.001
-vendor/lib/rfsa/adsp/dirac_resource.dar|7728d5b2ee2927a01df5bd6d7edae3736186c844
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
-vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
-vendor/lib/rfsa/adsp/libdirac-capiv2.so|e56031dfaee094d5267e3cc16625cfceaa07cc27
-vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
-vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|a06a3f52e89d219d2da0c7205e714cd7429b267c
-vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
-
-# ADSP modules (device specific)
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+# ADSP modules - from OnePlus5T PKQ1.180716.001
+vendor/lib/rfsa/adsp/dirac_resource.dar|672c11cc5ca509aca4182af8bf49eae9c61fec69
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|9e316576c950b407a31bbbee7791eeb72346112c
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|c36fa533983f83494438bc240f91b7da2a1a2289
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|d512aec9416ee5859c1042f8c04dc454b606ffa9
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|0f4ad1588273e9c8040c3e00ba0b36542940fd9a
+vendor/lib/rfsa/adsp/libdirac-capiv2.so|4e73e80226f595853c474e9f3e89eb97fac8d1ef
+vendor/lib/rfsa/adsp/libdspCV_skel.so|0aab74186aa6c3fdd8b58083a30724d31dcaa97a
+vendor/lib/rfsa/adsp/libfastcvadsp.so|8302e74efff97de52e7ad90e6cdd628b3724ae97
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|68986c015433ac8f63e3fc3966c24a94776667c5
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c0d8665cbe4ff58824dc77cb487e40b37f8cc24f
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so|6f1f406fb0322d4eb777d0561816050796345d55
 
 # Alarm - from jasmine PKQ1.180904.001
 framework/vendor.qti.hardware.alarm-V1.0-java.jar|6e6c6bc5e52ca4e1c8603e83ca1ad12e716a07ab
@@ -34,15 +32,15 @@ vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 
-# Audio libraries - from jasmine PKQ1.180904.001
-vendor/lib/libadiertac.so|25ae1c15162116bfb482e677343c33c6009ec62c
-vendor/lib/libadm.so|8db603b99c5c5fe1d2ca4fcc6663bf3eb0ff325d
-vendor/lib/libaudcal.so|04247071e078e8e182728f72241873ef2f27dffc
-vendor/lib/libqtigef.so|adf2bfcc4892e4d09d197e6643f639a429fea882
+# Audio libraries - from OnePlus5T PKQ1.180716.001
+vendor/lib/libadiertac.so|df58b49b4068aa87a4480c710d335f482c99975e
+vendor/lib/libadm.so|78405867b5013d525599e1919a74d38112006209
+vendor/lib/libaudcal.so|380f29ef9054231306053b8874a1f686ac9d3ad4
+vendor/lib/libqtigef.so|eec934e29057e255c2ea6c7b974597148b363618
 vendor/lib/soundfx/libasphere.so|504dd71419302f4c49de59429c79f13710b713cf
-vendor/lib/soundfx/libqcbassboost.so|1edabd3cdf2ad7ad1078e8b9c745a9897a4a3020
-vendor/lib/soundfx/libqcreverb.so|a6cd5c47e29ed21a1a5e1aef14df38737d5fb991
-vendor/lib/soundfx/libqcvirt.so|e9dcee3e95ae4c32a904eebfaa9736509b127ea6
+vendor/lib/soundfx/libqcbassboost.so|c4527fdcd3cd322cd91b03af10051b54d6c762a1
+vendor/lib/soundfx/libqcreverb.so|62bbe448996c769533210647a8df9baed5273e97
+vendor/lib/soundfx/libqcvirt.so|618403f5b50baffd525c430fdd916172d9e5b849
 
 # Bluetooth - from jasmine PKQ1.180904.001
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2db80f84068e915ec91fb33a79d26956acae4c21
@@ -50,17 +48,17 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6c
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|c7a0f1936f7d9ec64d8f9c8d1921b28eca434109
 vendor/lib64/libbtnv.so|d567d41d60b98703f93ab15b2f8a894f0ebdc1fc
 
-# Bluetooth ANT+ - from fajita PKQ1.180716.001
--lib/libantradio.so|7506f2577f2f1068688b623ca85e432be9c3dac9
--lib64/libantradio.so|fb958cb68c99c71455f969afdf96225f5110f0df
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|c446ab1634776adc390d559d601aeb32a958284d
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|ae9e681bd4bf50726f10a50cce10698c94649147
+# Bluetooth ANT+ - from OnePlus5T PKQ1.180716.001
+-lib/libantradio.so|d1f41ee14d4cd7b3a306a628bca5cc9e19027201
+-lib64/libantradio.so|456b6b2fda1450c852ad0b766143b9cf3c61cde0
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|474187a8132aabd45089cacd2f8de9a6d9f449a3
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|44294189280e86d95538bc51bdccd87b3f010f27
 
-# Bluetooth aptX - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
+# Bluetooth aptX - from OnePlus5T PKQ1.180716.001
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
 lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
-# Bluetooth FM - from jasmine PKQ1.180904.001
+# Bluetooth FM - from OnePlus5T PKQ1.180716.001
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|061ebea5b94f63fdc25ce67869dde08dbd969cca
 
 # Camera
@@ -346,7 +344,7 @@ vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a
 vendor/lib/mediadrm/libwvdrmengine.so|39630ba137f6e7d5b2dfd8597a15e81a0aaf4e65
 vendor/lib64/libwvhidl.so|0c50c3cd9985fbda6a17d961f8618e6e62e545ab
 
-# Gatekeeper - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
+# Gatekeeper - from OnePlus5T PKQ1.180716.001
 vendor/lib64/hw/gatekeeper.msm8998.so|cace8224973ea3e280636ece56cb49f01ebdf590
 
 # GPS - from jasmine PKQ1.180904.001
@@ -419,23 +417,23 @@ vendor/lib64/librs_adreno_sha1.so|ba9d6f624454b9381172e3373f079225d0ecf9f4
 vendor/lib64/librs_adreno.so|f52f1881d3813f4ab16e9c808404ced996e97f54
 vendor/lib64/libRSDriver_adreno.so|664e19e3e3b9ac20564ccb5060bcfd0a8e70152a
 
-# Graphics (OpenCL) - from jasmine PKQ1.180904.001
+# Graphics (OpenCL) - from OnePlus5T PKQ1.180716.001
 vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
 vendor/lib64/libOpenCL.so|1e78c9b98378803703835a3e1cbfabf43318f341
 
-# Graphics (SDM) - from jasmine PKQ1.180904.001
+# Graphics (SDM) - from OnePlus5T PKQ1.180716.001
 vendor/lib/libqseed3.so|c60e08f5efa1e9aea339a7a5a6dccdc2d107f530
 -vendor/lib/libsdm-disp-vndapis.so|31b8df32d8091ef0390352b118e59bbde3d4acc1
 vendor/lib64/libqseed3.so|f95dd7b55de9401ce2f568e3ec18493daa5a6bfe
 vendor/lib64/libsdm-color.so|5c8cda1e79cd46cd29e45d689017e24a440800b7
 vendor/lib64/libsdm-diag.so|25bab19a8c4453b3d20e3e1a71a0e8d3675b17b4
 -vendor/lib64/libsdm-disp-vndapis.so|6b0ee25367d386ccc1b42ea941f1da439a48b3ec
-vendor/lib64/libsdmextension.so|db7d755121acd2eaff7134b7403d59202d3cf197
+vendor/lib64/libsdmextension.so|c2981d2c1a8dc927ed016505c7cf9b163833e6c8
 vendor/lib64/libtinyxml2_1.so|9d5179eda8ce70b9a4014b144f9d23d33509fddc
 
-# Graphics (Vulkan) - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
-vendor/lib/hw/vulkan.msm8998.so|dabf8bfc1f51a1421838613d009e14840ec84e9d
-vendor/lib64/hw/vulkan.msm8998.so|5f1f6703644a6e36e4c48d70e8e875e55b6c2ddb
+# Graphics (Vulkan) - from OnePlus5T PKQ1.180716.001
+vendor/lib/hw/vulkan.msm8998.so|29d921ceb01c25124a27a2523a53d9dcec334427
+vendor/lib64/hw/vulkan.msm8998.so|248c5da40e8698e0f762a3f831a97663cda0d198
 
 # Graphics firmware
 vendor/firmware/a530_pfp.fw
@@ -499,23 +497,23 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.mdt
 vendor/firmware/ipa_fws.elf
 
-# Keystore - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
-vendor/lib64/hw/keystore.msm8998.so|e1065895b150b9ea1b8137bcb27488a1e73d3460
+# Keystore - from OnePlus5T PKQ1.180716.001
+vendor/lib64/hw/keystore.msm8998.so|834df7982427c992948a734a585d5ad6b898ab77
 
-# Listen - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
-vendor/lib/hw/sound_trigger.primary.msm8998.so|bcba01e2a18ec8ba7d9c3df68d5213bb48caf9d8
-vendor/lib/libsmwrapper.so|5406c4930fc71f16d315723d38cc3f316887c6ef
+# Listen - from OnePlus5T PKQ1.180716.001
+vendor/lib/hw/sound_trigger.primary.msm8998.so|81ae54d2471fba97e3c2d6ea50374407bf8f929a
+vendor/lib/libsmwrapper.so|edb451c9405ed9e216ccb1db22f4468c4900032f
 
-# Media - from jasmine PKQ1.180904.001
--vendor/lib/libgpustats.so|703422d2fbdfa74c261be3413ae38d2775604358
-vendor/lib/libOmxEvrcDec.so|5a4b6e0ded018932b92c5562341eee39ffc14d7a
-vendor/lib/libOmxVpp.so|ee5e357b58a79a085dfd0913f8f946f5534aa01c
-vendor/lib/libvpphvx.so|7937bbf848ea2970ce61d4e5c75f31d7a27b867c
-vendor/lib/libvpplibrary.so|84642e912f18636527f385a49a804e7df08d2555
+# Media - from OnePlus5T PKQ1.180716.001
+-vendor/lib/libgpustats.so|138dce3b7ac0c5c080acb122f2dfd1a70037d9aa
+vendor/lib/libOmxEvrcDec.so|347a010c009c6410f38ee9180c10cac4ade1206b
+vendor/lib/libOmxVpp.so|d252e70041557f149fc5493e5336889f15d6d348
+vendor/lib/libvpphvx.so|73fe8a025b63960da5e1d188da71736bde0a86b3
+vendor/lib/libvpplibrary.so|a8dcd89246ea7f534597f8dd2206fb9314189ab1
 vendor/lib/libvqzip.so|c1c4f35456ff34b4baba373f18ed034a7d1e2721
--vendor/lib64/libgpustats.so|79787eaed307f97ab3ce1864f6da39a096d9d153
+-vendor/lib64/libgpustats.so|429e9048389f9062702649e083ec53386966f93f
 
-# NFC firmware - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
+# NFC firmware - from OnePlus5T PKQ1.180716.001
 vendor/lib/libpn553_fw.so|c0b53ec8b330cd2c077b2bea6a7d5284151ec513
 
 # Perf - from taimen PQ1A.181105.017.A1
@@ -629,14 +627,14 @@ vendor/lib64/libsdsprpc.so|fc1325b8e76a125f6608a0086712dba894151c11
 vendor/lib64/libsensor1.so|322bd23852df0a0d6bfebf854e76f0181aa5ca7b
 vendor/lib64/libsensor_reg.so|fc339a65dafb44a629e6d83c13e8af71c293c53b
 
-# Sensors (board specific) - from poplar_dsds YOSHINO-2.2.0-CAF-181103-0550
-vendor/lib/hw/activity_recognition.msm8998.so|0e894d46c0a4c9a248af2a375b0d5923353a110c
-vendor/lib64/hw/activity_recognition.msm8998.so|65d367efebb46e515fe169f93450e7735672412b
+# Sensors (hardware specific) - from OnePlus5T PKQ1.180716.001
+vendor/lib/hw/activity_recognition.msm8998.so|24908965b7a3f7d15c4815ba4b5b59d2d0a1468e
+vendor/lib64/hw/activity_recognition.msm8998.so|3ff75418dddb9d2b50cf53e06462fa62815f5daa
+vendor/lib/libsns_low_lat_stream_stub.so|6582cb8f0857a6c584c859c3205ef3e5774520bd
+vendor/lib64/libsns_low_lat_stream_stub.so|d1d85aac50705e67f7d62fd364d52305667f06ef
 
-# Sensors (device specific)
-vendor/lib/libsns_low_lat_stream_stub.so
+# Sensors (SSC)
 vendor/lib/sensors.ssc.so
-vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/sensors.ssc.so
 
 # Thermal - from jasmine PKQ1.180904.001
