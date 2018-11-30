@@ -27,12 +27,10 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|7d163c35a9deee2801070ed50c6625709c3e0b65
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|1594b679eb1c791e0f4e0dbb9115b599a8553401
 
-# Audio (ACDB)
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-
 # Audio libraries - from OnePlus5T PKQ1.180716.001
+vendor/lib/libacdbloader.so
+vendor/lib/libacdb-fts.so|120d8fcf78fed9246fc3f56dd9b0f6d25070dc0d
+vendor/lib/libacdbrtac.so|1c8fb777150d2f0c168ad41e905b42f927c43f9e
 vendor/lib/libadiertac.so|df58b49b4068aa87a4480c710d335f482c99975e
 vendor/lib/libadm.so|78405867b5013d525599e1919a74d38112006209
 vendor/lib/libaudcal.so|380f29ef9054231306053b8874a1f686ac9d3ad4
