@@ -26,7 +26,9 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <audio_platform_info>
     <acdb_ids>
-        <device name="SND_DEVICE_OUT_SPEAKER" acdb_id="14"/>
+        <device name="SND_DEVICE_OUT_SPEAKER" acdb_id="34"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="34"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER_2" acdb_id="34"/>
         <device name="SND_DEVICE_IN_USB_HEADSET_MIC" acdb_id="10009"/>
         <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="10008"/>
         <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="124"/>
@@ -38,7 +40,7 @@
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_1" acdb_id="151"/>
         <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK_MONO_2" acdb_id="152"/>
         <device name="SND_DEVICE_IN_UNPROCESSED_USB_HEADSET_MIC" acdb_id="133"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" acdb_id="15"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" acdb_id="34"/>
         <device name="SND_DEVICE_OUT_USB_HEADSET" acdb_id="10"/>
         <device name="SND_DEVICE_OUT_USB_HEADPHONES" acdb_id="10"/>
     </acdb_ids>
