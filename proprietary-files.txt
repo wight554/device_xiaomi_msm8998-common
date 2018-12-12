@@ -7,21 +7,21 @@ vendor/lib64/libadsprpc.so|be8eb3ed2e38c4204f3c066a0dd5a00870a2be9a
 vendor/lib64/libadsp_default_listener.so|d28ea3a0509c13ff75c700efe1107bb2d2481eb6
 
 # ADSP modules - from OnePlus5T PKQ1.180716.001
-vendor/lib/rfsa/adsp/dirac_resource.dar|672c11cc5ca509aca4182af8bf49eae9c61fec69
+vendor/lib/rfsa/adsp/dirac_resource.dar|8db51a07775aace7e0f1db5db6b67264a2c4f668
 vendor/lib/rfsa/adsp/libadsp_fd_skel.so|9e316576c950b407a31bbbee7791eeb72346112c
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|c36fa533983f83494438bc240f91b7da2a1a2289
 vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|d512aec9416ee5859c1042f8c04dc454b606ffa9
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|0f4ad1588273e9c8040c3e00ba0b36542940fd9a
-vendor/lib/rfsa/adsp/libdirac-capiv2.so|4e73e80226f595853c474e9f3e89eb97fac8d1ef
+vendor/lib/rfsa/adsp/libdirac-capiv2.so|f5ae728bf259b93cf67f73fb8ca9b870e085b0fe
 vendor/lib/rfsa/adsp/libdspCV_skel.so|0aab74186aa6c3fdd8b58083a30724d31dcaa97a
 vendor/lib/rfsa/adsp/libfastcvadsp.so|8302e74efff97de52e7ad90e6cdd628b3724ae97
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|68986c015433ac8f63e3fc3966c24a94776667c5
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c0d8665cbe4ff58824dc77cb487e40b37f8cc24f
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so|6f1f406fb0322d4eb777d0561816050796345d55
 
-# Alarm - from jasmine PKQ1.180904.001
+# Alarm - from OnePlus5T PKQ1.180716.001
 framework/vendor.qti.hardware.alarm-V1.0-java.jar|6e6c6bc5e52ca4e1c8603e83ca1ad12e716a07ab
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk|0d257f3f4db3164500a99805177f6524475a8da4
+-vendor/app/PowerOffAlarm/PowerOffAlarm.apk|2d63f962563b5b111231a07b2c714e79b0fb406c
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|1300f2aacbcd159a2587abc1f38031d9c1f1beed
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|7d163c35a9deee2801070ed50c6625709c3e0b65
@@ -40,15 +40,17 @@ vendor/lib/soundfx/libqcbassboost.so|c4527fdcd3cd322cd91b03af10051b54d6c762a1
 vendor/lib/soundfx/libqcreverb.so|62bbe448996c769533210647a8df9baed5273e97
 vendor/lib/soundfx/libqcvirt.so|618403f5b50baffd525c430fdd916172d9e5b849
 
-# Bluetooth - from jasmine PKQ1.180904.001
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2db80f84068e915ec91fb33a79d26956acae4c21
+# Bluetooth - from OnePlus5T PKQ1.180716.001
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9f0bbbbc45cd57eed0175c1ff06b83473ea5c392
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|c7a0f1936f7d9ec64d8f9c8d1921b28eca434109
-vendor/lib64/libbtnv.so|d567d41d60b98703f93ab15b2f8a894f0ebdc1fc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|05c0900850b755eb635d3e4db4f8d53a5d7cc793
+vendor/lib64/libbtnv.so|9836da0787e3e6179c42a3d9dcf2f5a9d28362f5
 
 # Bluetooth ANT+ - from OnePlus5T PKQ1.180716.001
 -lib/libantradio.so|d1f41ee14d4cd7b3a306a628bca5cc9e19027201
+lib/com.qualcomm.qti.ant@1.0.so|a31ea1978c494b5723fdf37bca09f36a02cd168e
 -lib64/libantradio.so|456b6b2fda1450c852ad0b766143b9cf3c61cde0
+lib64/com.qualcomm.qti.ant@1.0.so|3a19c81d66ef1190d0b2f361420d5cbf707cc600
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|474187a8132aabd45089cacd2f8de9a6d9f449a3
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|44294189280e86d95538bc51bdccd87b3f010f27
 
@@ -262,19 +264,19 @@ lib64/libmorpho_memory_allocator.so
 lib64/libmorpho_panorama.so
 lib64/libmorpho_panorama_gp.so
 
-# Charger - from jasmine PKQ1.180904.001
-vendor/bin/hvdcp_opti|c9c92c0cf6180f2c79f6623387571fa9ccd789c8
+# Charger - from OnePlus5T PKQ1.180716.001
+vendor/bin/hvdcp_opti|6e1896054d36e4a0bfaf420a44c144f11edafd05
 
-# CNE - from jasmine PKQ1.180904.001
+# CNE - from OnePlus5T PKQ1.180716.001
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
-framework/cneapiclient.jar|1f519b8dfac0a6768d1933beda49251592081053
+framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
 framework/com.quicinc.cne.api-V1.0-java.jar|9cf7b7f1784c3594e3329954f64b1b129c433e8d
 framework/com.quicinc.cne.api-V1.1-java.jar|6c8815af55cb424fe3936f37a72e2d5bdbfb3b53
 framework/com.quicinc.cne.constants-V1.0-java.jar|eb2f74d281079971d6cddffba67da0f1fae1ee06
 framework/com.quicinc.cne.constants-V2.0-java.jar|6af0a0cd6246ec202d39ec2add03189cd3fa8029
 framework/com.quicinc.cne.constants-V2.1-java.jar|f4b7ec116cd4edca3423f455fca2569ed0919b4b
-framework/com.quicinc.cne.jar|268c414592b7065952cbce4838212f34ec211fc5
+framework/com.quicinc.cne.jar|ce985797730a043142c2312e30ada28cb755faef
 framework/com.quicinc.cne.server-V1.0-java.jar|a2d2f2826716e8a8000887fc3a0b0ae6d13f9263
 framework/com.quicinc.cne.server-V2.0-java.jar|6bba42f810057b8b52a73f55dbf7bf4de4dac249
 framework/com.quicinc.cne.server-V2.1-java.jar|a95528efeb0c14a0077c8b0b375e95ac433edc33
@@ -284,8 +286,8 @@ framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar|c57238430537b7f41536
 framework/vendor.qti.hardware.data.latency-V1.0-java.jar|da9a98f1eb883d591e0ff584f73cf9e56008eebf
 framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|94c3e0efe3bc51358fe9145ed1ff0708c262380d
 framework/vendor.qti.latency-V2.0-java.jar|ed273c0ed5e0107e406d7765b6e7ecacc360435f
--priv-app/CNEService/CNEService.apk|6b51c469e6e5883e1e8adbbcddf79a2a48889fed
-vendor/bin/cnd|36f46a299d704ffc3215a56b23d50766c37f2e26
+-priv-app/CNEService/CNEService.apk|007d9e6253edbde78674490579e79efe30c3290d
+vendor/bin/cnd|9310b8c59253b296af65e1b37c267bedfe271105
 vendor/lib64/com.quicinc.cne.api@1.0.so|1179434cbc23483d39a6d8291e2b338f1d35b80e
 vendor/lib64/com.quicinc.cne.api@1.1.so|b861ac056cb5f318f64371f5f1ca770084d43c2c
 vendor/lib64/com.quicinc.cne.constants@1.0.so|92ec19880eff39024caf7dea561af829833b62ed
@@ -294,53 +296,53 @@ vendor/lib64/com.quicinc.cne.constants@2.1.so|a93d72742a19b4f813c85f421b9fe61f45
 vendor/lib64/com.quicinc.cne.server@2.0.so|e45fc471f727393352e10c3228aea00e110c0171
 vendor/lib64/com.quicinc.cne.server@2.1.so|eefffa728a69eb8421c75003630bf282ac9928ac
 vendor/lib64/com.quicinc.cne.server@2.2.so|7337e41a312b535fd0a0b0c2ca4ea4a4a40f7db8
-vendor/lib64/libcne.so|702ffdf05cccb7d84c1659b2e55224251655ed37
-vendor/lib64/libcneapiclient.so|a47d83f5ec91f3074c102211d332b084633dccae
+vendor/lib64/libcne.so|c5e25aeaab1ef6dad007428b976ffc940b17e46e
+vendor/lib64/libcneapiclient.so|e40470b67fefd6247547a21524845c44095071e7
 vendor/lib64/libcneoplookup.so|c8e9d30106618a659ed2ae7fd0a72a3dd357d541
-vendor/lib64/libwms.so|a2ff74cd93504997ea8951f371e22ee40efd3298
-vendor/lib64/libwqe.so|fba997dfb8780558c47dc97197b2182afc2615bd
-vendor/lib64/libxml.so|3b6dfa233ad719abbeb65e1f4fc3f9a2329679a1
+vendor/lib64/libwms.so|e7ce4bcd552b4dd6a51ed9ee9e18513402f13222
+vendor/lib64/libwqe.so|5219fab4bd126930565752adc3648a874554231d
+vendor/lib64/libxml.so|907bf9b60aec4c6addbf60feea98e4f98379b888
 vendor/lib64/vendor.qti.data.factory@1.0.so|cf0f34cc9d740a7cc53d152b5b3bc5128f3e0b26
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|cab1951de5402fc18dc53fbbca1cd90de4838196
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|8018b457f47228c07bf7cbda56c66e9ddef025ab
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|bb2c6f9dabeacf88ecd8a4210716664ae8438feb
 vendor/lib64/vendor.qti.latency@2.0.so|bf9738655d6d3a59e93da9c2b56ae0b3a2428c71
 
-# DPM - from jasmine PKQ1.180904.001
-bin/dpmd|6c511738d83ba1cfdc75b00b9bd676d231914f3a
+# DPM - from OnePlus5T PKQ1.180716.001
+bin/dpmd|c18636f8b2323e8fcb363e9d477f2b1181d80120
 etc/dpm/dpm.conf|5f19d3984b5291ac956552bda2a84c10c535df0a
 etc/init/dpmd.rc|52ca6ad920a1804e4ff608113cece063730f5e0c
 etc/permissions/com.qti.dpmframework.xml|36b94c9338069e434b83359a92cdc7ff62b822df
 etc/permissions/dpmapi.xml|ded29f9befaef20a7ccee0c75427fda1d1d04890
-framework/com.qti.dpmframework.jar|4bdeade509cb417033402c8abbb3bfe7fbf155d0
-framework/dpmapi.jar|4940bdc99ec676e8c6372057f91ffc303f72b49d
-framework/tcmclient.jar|d63f61a2905cc48f0eed56cce5dc0ca80f7ada3a
-lib64/libdpmctmgr.so|611642251e77a1ce8a4bc59beaf4213bfc0cef8a
-lib64/libdpmfdmgr.so|84a6916dff3b3608e9ac83106df651ba995ca704
-lib64/libdpmframework.so|bbd59055bad5944fe8c8d8c7eb683b94646c6042
-lib64/libdpmtcm.so|db125f21d6f9da6afcb8956ba2eabae58cbeb30e
--priv-app/dpmserviceapp/dpmserviceapp.apk|094404342832ba72c1d4a99f1191c41cac621116
-vendor/bin/dpmQmiMgr|e2f12b458321a9a9353f1c4ced85bc740a1094d2
+framework/com.qti.dpmframework.jar|4a48456f8ed4b751135b05a99f273996bf35fd9c
+framework/dpmapi.jar|66a30e2752b058f6f522721ef6b5efb4c747f7ed
+framework/tcmclient.jar|5f3878f0fe312a429d3a69a2119b34100818292e
+lib64/libdpmctmgr.so|04b553e2614c3e595b1b7be1cb1f3e305eb52460
+lib64/libdpmfdmgr.so|8fae3a79b0c18aa07f3e55fde158963ca3366976
+lib64/libdpmframework.so|9f794c9bcaae8fdafad74823a0f74ec7944851e5
+lib64/libdpmtcm.so|e28e646a11eadd59b017dcecb34326f9a2d4cacb
+-priv-app/dpmserviceapp/dpmserviceapp.apk|4c3f830d630722f48589d3b5e4404d5ebef96b51
+vendor/bin/dpmQmiMgr|3919ad72058ee5d6789dbf8a47e823aca63c3e37
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|05af4880ad4c633fe60750ff49525e62822585f7
 vendor/lib64/libdpmqmihal.so|fecdfdb7591feec835ed713863a8dbcca141b252
 
-# DRM and SEE - from jasmine PKQ1.180904.001
-vendor/bin/qseecomd|cf78dd27e93f4cfd59d95909651d7f719d079181
-vendor/lib64/libdrmfs.so|190f2ce59725f045c76ed14886fba8bc6a3a74ab
-vendor/lib64/libdrmtime.so|609c2964cd9d0f17c873ba7ce242752994ba2344
-vendor/lib64/libGPreqcancel_svc.so|a75a32d4cff28841783c0db222c08c618e52625b
+# DRM and SEE - from OnePlus5T PKQ1.180716.001
+vendor/bin/qseecomd|19449ddf09d651082e15d550b17bfc69b519d39f
+vendor/lib64/libdrmfs.so|b8219439b4da66581acf1dac4b844fb5ac4ef869
+vendor/lib64/libdrmtime.so|a64e2050e183664de0702fef865b3c0f66223662
+vendor/lib64/libGPreqcancel_svc.so|7803a229c42f0d29be8447660a9c53e7f41be2e7
 vendor/lib64/libGPreqcancel.so|19679b918e5dcce54f853b8019806cdb6d2da165
-vendor/lib64/libQSEEComAPI.so|6ec762ad6105ca6b8a22f2878a6c8bb6d1bff0b9
-vendor/lib64/librpmb.so|15b5052a97a4952246a9f9d7fce98e1be50f86cc
-vendor/lib64/libspl.so|cebf7eb2a0baee9589ae616798ef5ab1b583a86c
-vendor/lib64/libssd.so|e8a688dac8c3f5d74e18cf81b646de7469201055
+vendor/lib64/libQSEEComAPI.so|e22d127cea0d1f2594faa017e832f73436d54230
+vendor/lib64/librpmb.so|9c49049ea86dbdcdcbff9311d0fd9c327cd8b72a
+vendor/lib64/libspl.so|5443114db96c1a534e6a338dec895af26dd9d863
+vendor/lib64/libssd.so|1bfbfab2df1da297d5f9d7a0cc6f39fef55c3b3d
 
-# DRM Widevine - from jasmine PKQ1.180904.001
+# DRM Widevine - from OnePlus5T PKQ1.180716.001
 bin/move_widevine_data.sh|dec5dc2ec4800e1bff5b442cf745ef37eaff9525
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|320749f5ce293176b9de747d13db7f026748b955
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
-vendor/lib/mediadrm/libwvdrmengine.so|39630ba137f6e7d5b2dfd8597a15e81a0aaf4e65
-vendor/lib64/libwvhidl.so|0c50c3cd9985fbda6a17d961f8618e6e62e545ab
+vendor/lib/mediadrm/libwvdrmengine.so|6af4a84160cda963e84df08d8fb104612213213c
+vendor/lib64/libwvhidl.so|f8b7b53c727b7b51f70173569e5819183624c322
 
 # Gatekeeper - from OnePlus5T PKQ1.180716.001
 vendor/lib64/hw/gatekeeper.msm8998.so|cace8224973ea3e280636ece56cb49f01ebdf590
@@ -603,37 +605,34 @@ vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so|60e98792fc30185c960ba853261561
 vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so|642eb0e7f8a41c8a15e5fbd0e9caf700b444fe03
 vendor/radio/qcril_database/qcril.db|ced4370ad96adba7e0f8c03018a3d188cb8e4ec4
 
-# Sensors - from jasmine PKQ1.180904.001
-vendor/bin/sensors.qti|b30ad4fdc8ecab0f7e3b9ede664dbecf204241b7
-vendor/lib/libsdsprpc.so|979a7a2a7bb5622d0ff404d0151536437c0c381b
-vendor/lib/libsensor1.so|a34ac1e81a8eb93efe434829d74809a5aa307d3c
-vendor/lib/libsensor_reg.so|af6296fe9495b370300634c008c02d356ce38092
-vendor/lib64/libsdsprpc.so|fc1325b8e76a125f6608a0086712dba894151c11
-vendor/lib64/libsensor1.so|322bd23852df0a0d6bfebf854e76f0181aa5ca7b
-vendor/lib64/libsensor_reg.so|fc339a65dafb44a629e6d83c13e8af71c293c53b
-
-# Sensors (hardware specific) - from OnePlus5T PKQ1.180716.001
+# Sensors - from OnePlus5T PKQ1.180716.001
+vendor/bin/sensors.qti|b4e996ccfba02c6c1960c6334653c4430b705ac7
 vendor/lib/hw/activity_recognition.msm8998.so|24908965b7a3f7d15c4815ba4b5b59d2d0a1468e
-vendor/lib64/hw/activity_recognition.msm8998.so|3ff75418dddb9d2b50cf53e06462fa62815f5daa
+vendor/lib/libsdsprpc.so|75efa9cab9f8da07d4fa70a6c8b0f4c6e9ced7fd
+vendor/lib/libsensor1.so|3884d12a7ec33b8241eafdeb44c4fbe31e2c768c
+vendor/lib/libsensor_reg.so|f2dce1a989f76771da9fd96007548cbccf2c28ca
 vendor/lib/libsns_low_lat_stream_stub.so|6582cb8f0857a6c584c859c3205ef3e5774520bd
+vendor/lib64/hw/activity_recognition.msm8998.so|3ff75418dddb9d2b50cf53e06462fa62815f5daa
+vendor/lib64/libsdsprpc.so|96e0ac962f3a281623b14130b353ccf385dfce3f
+vendor/lib64/libsensor1.so|178646859e4a6f00450dcc8762737a4a98148221
+vendor/lib64/libsensor_reg.so|1c394211adf96e31ebfdf4a1d585e3a929683f5d
 vendor/lib64/libsns_low_lat_stream_stub.so|d1d85aac50705e67f7d62fd364d52305667f06ef
 
 # Sensors (SSC)
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 
-# Thermal - from jasmine PKQ1.180904.001
+# Thermal - from OnePlus5T PKQ1.180716.001
 vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
-vendor/bin/thermal-engine|f750e90af4a73df3dd51ccb87e150d971c5bef7d
+vendor/bin/thermal-engine|e205a5ccecf1080a2f0e850dd9d40be6bb8de3c2
 vendor/lib/libthermalclient.so|4579096edb376b06827f8e90a49480cf121030f0
 vendor/lib64/libthermalclient.so|54121e31e4a5170f8c50e36ddb57685b6c538a21
-vendor/lib64/libthermalfeature.so|655a4b39b45a80069d7d8706a921ee0ace3a4865
-vendor/lib64/libthermalioctl.so|0edca2e89fbd872d8595517254669ea7feb1e0b0
+vendor/lib64/libthermalioctl.so|3b99f52f4b20ffb9cdc121e0e28792c67f50baf7
 
-# Time services - from jasmine PKQ1.180904.001
--vendor/app/TimeService/TimeService.apk|94c3f66b2172a93e78c25d948905867b31b47fa8
-vendor/bin/time_daemon|c55499f7cc2ce5f3c12645e2395bf079f0a5b2fd
-vendor/lib64/libtime_genoff.so|e341ec29dbfb6d1fae84915a6151fd56d25f4ddc
+# Time services - from OnePlus5T PKQ1.180716.001
+-vendor/app/TimeService/TimeService.apk|ab3469514a845e8933e1544e085dc686dc988637
+vendor/bin/time_daemon|f8df662e870ae3033d69410a575a53e4c9a73bc5
+vendor/lib64/libtime_genoff.so|5cbe121e2c47db348e5e034c7e702cd9494d6fd2
 
 # Wi-Fi - from jasmine PKQ1.180904.001
 vendor/bin/cnss-daemon|01ce2fa8f4852305bea2af33f59e41e7f05f44ad
