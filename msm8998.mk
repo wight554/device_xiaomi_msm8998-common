@@ -340,6 +340,9 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service
 
 # WFD
+PRODUCT_PACKAGES += \
+    libnl
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
