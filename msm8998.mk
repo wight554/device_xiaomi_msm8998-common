@@ -98,7 +98,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@4.0-impl:32 \
-    android.hardware.audio@4.0-impl \
+    android.hardware.audio@4.0-impl:32 \
     android.hardware.audio@2.0-service \
     android.hardware.soundtrigger@2.1-impl:32
 
@@ -150,9 +150,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.mapper@2.0-impl \
-    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-impl:64 \
     android.hardware.memtrack@1.0-service \
-    android.hardware.renderscript@1.0-impl
+    android.hardware.renderscript@1.0-impl:64
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -172,7 +172,7 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-impl:64 \
     android.hardware.gatekeeper@1.0-service
 
 PRODUCT_COPY_FILES += \
@@ -204,7 +204,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-impl:64 \
     android.hardware.keymaster@3.0-service
 
 # Lights
@@ -224,7 +224,7 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
+    android.system.net.netd@1.0:64 \
     libandroid_net \
     netutils-wrapper-1.0
 
@@ -303,7 +303,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.0:64 \
     librmnetctl
 
 # Seccomp policy
