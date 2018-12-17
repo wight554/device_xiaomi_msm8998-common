@@ -110,16 +110,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Memory
 PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.heapmaxfree=8m \
-	dalvik.vm.heapminfree=512k \
+	dalvik.vm.heapminfree=4m \
 	dalvik.vm.heapsize=512m \
-	dalvik.vm.heapstartsize=8m \
+	dalvik.vm.heapstartsize=16m \
 	dalvik.vm.heaptargetutilization=0.75
 
 # Memory (CAF)
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.vendor.qti.sys.fw.bg_apps_limit=60 \
 	ro.vendor.qti.sys.fw.bservice_enable=true \
-	sys.tp.grip_enable=0
+	ro.vendor.qti.sys.fw.bservice_limit=5 \
+	ro.vendor.qti.sys.fw.bservice_age=5000
 
 # Network manager
 PRODUCT_PROPERTY_OVERRIDES += \
