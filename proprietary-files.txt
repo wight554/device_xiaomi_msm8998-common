@@ -408,15 +408,15 @@ vendor/lib64/libRSDriver_adreno.so|664e19e3e3b9ac20564ccb5060bcfd0a8e70152a
 vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
 vendor/lib64/libOpenCL.so|1e78c9b98378803703835a3e1cbfabf43318f341
 
-# Graphics (SDM) - from OnePlus5T PKQ1.180716.001
+# Graphics (SDM) - from D1C PKQ1.181105.001
+vendor/lib64/libsdm-color.so|a1af37dd56eea852759efe3aa213df3bd3c00daf
+vendor/lib64/libsdm-diag.so|87a4f764e894f16246c9a0d6e3f5885df76b750b
+vendor/lib64/libsdmextension.so|fd0c55fb27df93a36affccba87843fe50a246719
+vendor/lib64/libtinyxml2_1.so|b225b16e689e7e4c26fc6144637f6b0c416063f8
+
+# Graphics (SDM QSEED3) - from OnePlus5T PKQ1.180716.001
 vendor/lib/libqseed3.so|c60e08f5efa1e9aea339a7a5a6dccdc2d107f530
--vendor/lib/libsdm-disp-vndapis.so|31b8df32d8091ef0390352b118e59bbde3d4acc1
 vendor/lib64/libqseed3.so|f95dd7b55de9401ce2f568e3ec18493daa5a6bfe
-vendor/lib64/libsdm-color.so|5c8cda1e79cd46cd29e45d689017e24a440800b7
-vendor/lib64/libsdm-diag.so|25bab19a8c4453b3d20e3e1a71a0e8d3675b17b4
--vendor/lib64/libsdm-disp-vndapis.so|6b0ee25367d386ccc1b42ea941f1da439a48b3ec
-vendor/lib64/libsdmextension.so|c2981d2c1a8dc927ed016505c7cf9b163833e6c8
-vendor/lib64/libtinyxml2_1.so|9d5179eda8ce70b9a4014b144f9d23d33509fddc
 
 # Graphics (Vulkan) - from OnePlus5T PKQ1.180716.001
 vendor/lib/hw/vulkan.msm8998.so|29d921ceb01c25124a27a2523a53d9dcec334427
