@@ -216,6 +216,14 @@ vendor/lib/libvpplibrary.so|a8dcd89246ea7f534597f8dd2206fb9314189ab1
 vendor/lib/libvqzip.so|c1c4f35456ff34b4baba373f18ed034a7d1e2721
 -vendor/lib64/libgpustats.so|429e9048389f9062702649e083ec53386966f93f
 
+# Mlipay - from nitrogen PKQ1.181007.001
+lib64/vendor.xiaomi.hardware.mlipay@1.0.so|1573edb88032522d819feffced8c21fa40e1bded
+lib64/vendor.xiaomi.hardware.mlipay@1.1.so|ec9c96cb483e4a472290adb5c938c4d64c9d3ae4
+vendor/bin/mlipayd@1.1|e743d7ab90de8f13745161f70bb0271a84f01eac
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
+vendor/lib64/libmlipay@1.1.so|e73972bd8b91f9d3e82828223d5060b53dae4810
+vendor/lib64/libmlipay.so|2d294ba3bee3fb9ee0bbea022889c1a9e6ed562d
+
 # NFC firmware - from OnePlus5T PKQ1.180716.001
 vendor/lib/libpn553_fw.so|c0b53ec8b330cd2c077b2bea6a7d5284151ec513
 
