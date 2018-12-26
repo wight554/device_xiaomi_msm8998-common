@@ -60,7 +60,7 @@
             <defaultOutputDevice>Speaker</defaultOutputDevice>
             <mixPorts>
                 <mixPort name="primary output" role="source" flags="AUDIO_OUTPUT_FLAG_FAST|AUDIO_OUTPUT_FLAG_PRIMARY">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                    <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="raw" role="source"
@@ -68,13 +68,13 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
-                <mixPort name="deep_buffer" role="source"
-                        flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
+                <mixPort name="mmap_no_irq_out" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_MMAP_NOIRQ">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
-                <mixPort name="mmap_no_irq_out" role="source" flags="AUDIO_OUTPUT_FLAG_DIRECT|AUDIO_OUTPUT_FLAG_MMAP_NOIRQ">
-                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                <mixPort name="deep_buffer" role="source"
+                        flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
+                    <profile name="" format="AUDIO_FORMAT_PCM_24_BIT_PACKED"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
                 <mixPort name="hifi_playback" role="source" />
@@ -254,11 +254,11 @@
                 </devicePort>
                 <devicePort tagName="USB Device Out" type="AUDIO_DEVICE_OUT_USB_DEVICE" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100,48000,64000,88200,96000,128000,176400,192000" channelMasks="dynamic"/>
+                             samplingRates="44100,48000,64000,88200,96000,128000,176400,192000" channelMasks="AUDIO_CHANNEL_OUT_MONO,AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
                 <devicePort tagName="USB Headset Out" type="AUDIO_DEVICE_OUT_USB_HEADSET" role="sink">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
-                             samplingRates="44100,48000,64000,88200,96000,128000,176400,192000" channelMasks="dynamic"/>
+                             samplingRates="44100,48000,64000,88200,96000,128000,176400,192000" channelMasks="AUDIO_CHANNEL_OUT_MONO,AUDIO_CHANNEL_OUT_STEREO"/>
                 </devicePort>
 
                 <!-- Input devices declaration, i.e. Source DEVICE PORT -->
