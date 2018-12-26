@@ -41,6 +41,7 @@ write_headers "chiron sagit"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true
+write_makefiles "$MY_DIR"/kanged-proprietary-files.txt true
 
 # Finish
 write_footers
