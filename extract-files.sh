@@ -20,77 +20,89 @@ set -e
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ROM_ROOT="$MY_DIR"/../../..
+ROM_ROOT="${MY_DIR}/../../.."
 
-HELPER="$ROM_ROOT"/buildtools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
+HELPER="${ROM_ROOT}"/buildtools/extract_utils.sh
+if [ ! -f "${HELPER}" ]; then
+    echo "Unable to find helper script at ${HELPER}"
     exit 1
 fi
-. "$HELPER"
+source "${HELPER}"
 
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
-while [ "$1" != "" ]; do
-    case $1 in
-        -n | --no-cleanup )     CLEAN_VENDOR=false
-                                ;;
-        -s | --section )        shift
-                                SECTION=$1
-                                CLEAN_VENDOR=false
-                                ;;
-        * )                     SRC=$1
-                                ;;
+while [ "${#}" -gt 0 ]; do
+    case "${1}" in
+        -n | --no-cleanup )
+            CLEAN_VENDOR=false
+            ;;
+        -k | --kang )
+                KANG="--kang"
+                ;;
+        -s | --section )
+                SECTION="${2}"; shift
+                CLEAN_VENDOR=false
+                ;;
+        * )
+                SRC="${1}"
+                ;;
     esac
     shift
 done
 
-if [ -z "$SRC" ]; then
-    SRC=adb
+if [ -z "${SRC}" ]; then
+    SRC="adb"
 fi
+
+function blob_fixup() {
+    case "${1}" in
+    etc/permissions/qti_libpermissions.xml)
+        sed -i "s|name=\"android.hidl.manager-V1.0-java|name=\"android.hidl.manager@1.0-java|g" "${2}"
+        ;;
+    vendor/lib/libMiCameraHal.so)
+        sed -i "s|system/etc/dualcamera.png|vendor/etc/dualcamera.png|g" "${2}"
+        patchelf --replace-needed "libicuuc.so" "libicuuc-v27.so" "${2}"
+        ;;
+    vendor/lib/hw/camera.msm8998.so)
+        patchelf --replace-needed "libminikin.so" "libminikin-v27.so" "${2}"
+        ;;
+    vendor/lib/libicuuc-v27.so)
+        patchelf --set-soname "libicuuc-v27.so" "${2}"
+        ;;
+    vendor/lib/libminikin-v27.so)
+        patchelf --set-soname "libminikin-v27.so" "${2}"
+        ;;
+    vendor/lib/libmmcamera2_sensor_modules.so)
+        sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${2}"
+        ;;
+    vendor/bin/mlipayd@1.1)
+        patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
+        ;;
+    vendor/lib64/libmlipay@1.1.so)
+        patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
+        ;;
+    vendor/lib64/libmlipay.so)
+        patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
+        ;;
+	esac
+}
 
 # Initialize the helper for common device
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$ROM_ROOT" true "$CLEAN_VENDOR"
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ROM_ROOT}" true "${CLEAN_VENDOR}"
 
-extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
+extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
+        "${KANG}" --section "${SECTION}"
 
-if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
+if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
-    setup_vendor "$DEVICE" "$VENDOR" "$ROM_ROOT" false "$CLEAN_VENDOR"
+    source "${MY_DIR}/../${DEVICE}/extract-files.sh"
+    setup_vendor "${DEVICE}" "${VENDOR}" "${ROM_ROOT}" false "${CLEAN_VENDOR}"
 
-    extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
+    extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
+            "${KANG}" --section "${SECTION}"
 fi
 
-COMMON_BLOB_ROOT="$ROM_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary
-
-#
-# Load camera configs from vendor
-#
-CAMERA2_SENSOR_MODULES="$COMMON_BLOB_ROOT"/vendor/lib/libmmcamera2_sensor_modules.so
-sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
-
-#
-# Load camera watermark from vendor
-#
-MI_CAMERA_HAL="$COMMON_BLOB_ROOT"/vendor/lib/libMiCameraHal.so
-sed -i "s|system/etc/dualcamera.png|vendor/etc/dualcamera.png|g" "$MI_CAMERA_HAL"
-
-#
-# Replace libicuuc.so with libicuuc-v27.so for libMiCameraHal.so
-#
-ICUUC_V27="$COMMON_BLOB_ROOT"/vendor/lib/libicuuc-v27.so
-patchelf --replace-needed libicuuc.so libicuuc-v27.so "$MI_CAMERA_HAL"
-patchelf --set-soname libicuuc-v27.so "$ICUUC_V27"
-
-#
-# Replace libminikin.so with libminikin-v27.so for camera.msm8998.so
-#
-CAMERA_MSM8998="$COMMON_BLOB_ROOT"/vendor/lib/hw/camera.msm8998.so
-MINIKIN_V27="$COMMON_BLOB_ROOT"/vendor/lib/libminikin-v27.so
-patchelf --replace-needed libminikin.so libminikin-v27.so "$CAMERA_MSM8998"
-patchelf --set-soname libminikin-v27.so "$MINIKIN_V27"
-
-"$MY_DIR"/setup-makefiles.sh
+source "${MY_DIR}/setup-makefiles.sh"
