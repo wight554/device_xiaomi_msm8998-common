@@ -91,7 +91,6 @@ vendor/lib64/libssd.so|1bfbfab2df1da297d5f9d7a0cc6f39fef55c3b3d
 bin/move_widevine_data.sh|dec5dc2ec4800e1bff5b442cf745ef37eaff9525
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine|320749f5ce293176b9de747d13db7f026748b955
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
-vendor/lib/mediadrm/libwvdrmengine.so|6af4a84160cda963e84df08d8fb104612213213c
 vendor/lib64/libwvhidl.so|f8b7b53c727b7b51f70173569e5819183624c322
 
 # Gatekeeper - from OnePlus5T PKQ1.180716.001
