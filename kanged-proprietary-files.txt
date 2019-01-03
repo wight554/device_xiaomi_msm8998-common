@@ -35,21 +35,7 @@ vendor/bin/hvdcp_opti|6e1896054d36e4a0bfaf420a44c144f11edafd05
 etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
 framework/cneapiclient.jar|af7db889362e562a4c5073bb6aae32947218abf0
-framework/com.quicinc.cne.api-V1.0-java.jar|9cf7b7f1784c3594e3329954f64b1b129c433e8d
-framework/com.quicinc.cne.api-V1.1-java.jar|6c8815af55cb424fe3936f37a72e2d5bdbfb3b53
-framework/com.quicinc.cne.constants-V1.0-java.jar|eb2f74d281079971d6cddffba67da0f1fae1ee06
-framework/com.quicinc.cne.constants-V2.0-java.jar|6af0a0cd6246ec202d39ec2add03189cd3fa8029
-framework/com.quicinc.cne.constants-V2.1-java.jar|f4b7ec116cd4edca3423f455fca2569ed0919b4b
 framework/com.quicinc.cne.jar|ce985797730a043142c2312e30ada28cb755faef
-framework/com.quicinc.cne.server-V1.0-java.jar|a2d2f2826716e8a8000887fc3a0b0ae6d13f9263
-framework/com.quicinc.cne.server-V2.0-java.jar|6bba42f810057b8b52a73f55dbf7bf4de4dac249
-framework/com.quicinc.cne.server-V2.1-java.jar|a95528efeb0c14a0077c8b0b375e95ac433edc33
-framework/com.quicinc.cne.server-V2.2-java.jar|e1041e559afecd0d9371ba78ddb36ea1873f9f15
-framework/vendor.qti.data.factory-V1.0-java.jar|23a060c1197f21f4f3b0f77485d8ee387d740e5d
-framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar|c57238430537b7f41536b1f6152740ef117adc48
-framework/vendor.qti.hardware.data.latency-V1.0-java.jar|da9a98f1eb883d591e0ff584f73cf9e56008eebf
-framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|94c3e0efe3bc51358fe9145ed1ff0708c262380d
-framework/vendor.qti.latency-V2.0-java.jar|ed273c0ed5e0107e406d7765b6e7ecacc360435f
 -priv-app/CNEService/CNEService.apk|007d9e6253edbde78674490579e79efe30c3290d
 vendor/bin/cnd|9310b8c59253b296af65e1b37c267bedfe271105
 vendor/lib64/com.quicinc.cne.api@1.0.so|1179434cbc23483d39a6d8291e2b338f1d35b80e
@@ -166,8 +152,6 @@ vendor/lib64/hw/vulkan.msm8998.so|248c5da40e8698e0f762a3f831a97663cda0d198
 
 # IMS - from nitrogen PKQ1.181007.001
 -priv-app/ims/ims.apk|b681d32a74b3d3e7fa7d92761c78fcf43abcfd67
-framework/com.qualcomm.qti.imscmservice-V2.0-java.jar|ade742e2b8007c19d4106dce110c9d895b678213
-framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|0adc8ab52e16f3f3d2b7898a83621c1f8e2b3caa
 lib64/com.qualcomm.qti.imscmservice@2.0.so|c14157e35f83b2481b83ca35d4925fcb135325aa
 lib64/com.qualcomm.qti.imscmservice@2.1.so|56310782689ac800060cf045534c7d7cbac6a95a
 lib64/com.qualcomm.qti.uceservice@2.0.so|927297576baf01c083f08932ed7f69f6c19de89b
@@ -241,7 +225,6 @@ vendor/bin/pm-service|d9fefe2b7fec574ac4eb70a29303eeec819e449d
 vendor/lib64/libperipheral_client.so|c4b0cb11e908b234a54a9f212c42ff4c37e37391
 
 # Power-off alarm - from OnePlus5T PKQ1.180716.001
-framework/vendor.qti.hardware.alarm-V1.0-java.jar|6e6c6bc5e52ca4e1c8603e83ca1ad12e716a07ab
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk|2d63f962563b5b111231a07b2c714e79b0fb406c
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|1300f2aacbcd159a2587abc1f38031d9c1f1beed
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
