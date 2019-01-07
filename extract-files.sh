@@ -55,7 +55,6 @@ fi
 # Initialize the helper for common device
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$ROM_ROOT" true "$CLEAN_VENDOR"
 
-extract "$MY_DIR"/kanged-proprietary-files.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
