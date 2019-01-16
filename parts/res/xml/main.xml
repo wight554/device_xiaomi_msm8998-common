@@ -14,15 +14,6 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.omnirom.device.VibratorStrengthPreference
-        android:key="vib_strength"
-        android:iconSpaceReserved="true"
-        android:title="@string/vib_strength_title_head"
-        android:summary="@string/vib_strength_summary_head" />
-    <SwitchPreference
-        android:key="taptowake"
-        android:summary="@string/taptowake_summary"
-        android:title="@string/taptowake_title" />
     <Preference
         android:key="device_doze"
         android:persistent="false"
@@ -31,4 +22,13 @@
             android:targetPackage="org.lineageos.settings.doze"
             android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"/>
     </Preference>
+    <SwitchPreference
+        android:key="taptowake"
+        android:summary="@string/taptowake_summary"
+        android:title="@string/taptowake_title" />
+    <org.omnirom.device.VibratorStrengthPreference
+        android:key="vib_strength"
+        android:iconSpaceReserved="true"
+        android:title="@string/vib_strength_title_head"
+        android:summary="@string/vib_strength_summary_head" />
 </PreferenceScreen>
