@@ -20,16 +20,16 @@ package org.omnirom.device;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.database.ContentObserver;
+import android.os.Bundle;
+import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.preference.SeekBarDialogPreference;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.os.Bundle;
-import android.util.Log;
-import android.os.Vibrator;
 
 import java.util.List;
 

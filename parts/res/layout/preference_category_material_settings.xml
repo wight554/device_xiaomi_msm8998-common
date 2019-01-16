@@ -23,7 +23,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
-    android:paddingStart="?android:attr/listPreferredItemPaddingStart" >
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart">
 
     <LinearLayout
         android:id="@+id/icon_container"
@@ -62,7 +62,6 @@
             android:textAppearance="?android:attr/textAppearanceListItemSecondary"
             android:textColor="?android:attr/textColorSecondary"
             android:ellipsize="end"
-            android:singleLine="true" />
+            android:singleLine="true"/>
     </LinearLayout>
-
 </FrameLayout>
