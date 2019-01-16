@@ -16,7 +16,7 @@
         android:theme="@style/Theme.Main"
         android:supportsRtl="true" >
         <activity
-            android:name="org.omnirom.device.DeviceSettings"
+            android:name=".DeviceSettings"
             android:exported="true"
             android:label="@string/advanced_settings" >
             <intent-filter>
@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <receiver android:name="org.omnirom.device.Startup" >
+        <receiver android:name=".Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
