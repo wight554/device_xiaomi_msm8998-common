@@ -21,8 +21,8 @@
         <item name="android:preferenceStyle">@style/Theme.Main.SettingsPreference</item>
         <item name="android:dialogPreferenceStyle">@style/Theme.Main.SettingsDialogPreference</item>
         <item name="android:preferenceScreenStyle">@style/Theme.Main.SettingsPreferenceScreen</item>
-        <item name="android:dialogTheme">@*android:style/Theme.Material.Settings.BaseDialog</item>
-        <item name="android:alertDialogTheme">@*android:style/Theme.Material.Settings.Dialog.BaseAlert</item>
+        <item name="android:dialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog</item>
+        <item name="android:alertDialogTheme">@*android:style/Theme.DeviceDefault.Light.Dialog.Alert</item>
     </style>
 
     <style name="Theme.Main.SettingsPreference" parent="@*android:style/Preference.DeviceDefault">
