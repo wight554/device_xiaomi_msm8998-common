@@ -16,9 +16,10 @@
 <resources>
     <string name="app_name">Xiaomi</string>
     <string name="advanced_settings">Advanced</string>
-    <string name="vib_strength_title_head">Vibration strength</string>
-    <string name="vib_strength_summary_head">Define the strength of the vibrator</string>
+    <string name="vib_strength_title">Vibration strength</string>
+    <string name="vib_strength_summary">Define the strength of the vibrator</string>
     <string name="taptowake_title">Tap to wake</string>
     <string name="taptowake_summary">Double-tap anywhere on the screen to wake device</string>
     <string name="device_doze_title">Ambient display</string>
+    <string name="device_doze_summary">Wake screeen when you receive notifications</string>
 </resources>
