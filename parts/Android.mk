@@ -11,13 +11,7 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
-package_resource_overlays := $(strip \
-    $(wildcard $(foreach dir, $(PRODUCT_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/XiaomiParts/res))) \
-    $(wildcard $(foreach dir, $(DEVICE_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/XiaomiParts/res))))
-
-LOCAL_RESOURCE_DIR := $(package_resource_overlays) $(LOCAL_RESOURCE_DIR)
+LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR)
 
 LOCAL_PROGUARD_ENABLED := disabled
 LOCAL_DEX_PREOPT := false
