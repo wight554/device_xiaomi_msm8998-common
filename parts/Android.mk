@@ -13,9 +13,6 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
 LOCAL_RESOURCE_DIR := $(LOCAL_RESOURCE_DIR)
 
-LOCAL_PROGUARD_ENABLED := disabled
-LOCAL_DEX_PREOPT := false
-
 include $(BUILD_PACKAGE)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
