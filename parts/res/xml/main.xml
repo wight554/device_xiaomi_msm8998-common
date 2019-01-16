@@ -16,6 +16,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <Preference
         android:key="device_doze"
+        android:icon="@drawable/ic_device_doze"
         android:persistent="false"
         android:title="@string/device_doze_title"
         android:summary="@string/device_doze_summary">
@@ -25,10 +26,12 @@
     </Preference>
     <SwitchPreference
         android:key="taptowake"
+        android:icon="@drawable/ic_taptowake"
         android:summary="@string/taptowake_summary"
         android:title="@string/taptowake_title"/>
     <org.omnirom.device.VibratorStrengthPreference
         android:key="vib_strength"
+        android:icon="@drawable/ic_vib_strength"
         android:iconSpaceReserved="true"
         android:title="@string/vib_strength_title"
         android:summary="@string/vib_strength_summary"/>
