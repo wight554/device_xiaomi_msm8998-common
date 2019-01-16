@@ -24,12 +24,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
-import android.support.v14.preference.PreferenceFragment;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.TwoStatePreference;
+import android.preference.ListPreference;
+import android.preference.Preference;
+import android.preference.PreferenceActivity;
+import android.preference.PreferenceCategory;
+import android.preference.PreferenceScreen;
+import android.preference.TwoStatePreference;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -39,7 +39,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.util.Log;
 
-public class DeviceSettings extends PreferenceFragment implements
+public class DeviceSettings extends PreferenceActivity implements
         Preference.OnPreferenceChangeListener {
 
     private static final String KEY_CATEGORY_DISPLAY = "display";
@@ -53,8 +53,11 @@ public class DeviceSettings extends PreferenceFragment implements
     private VibratorStrengthPreference mVibratorStrength;
 
     @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        setPreferencesFromResource(R.xml.main, rootKey);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        addPreferencesFromResource(R.xml.main);
 
         mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
         if (mVibratorStrength != null) {
@@ -63,7 +66,7 @@ public class DeviceSettings extends PreferenceFragment implements
 
         mTapToWakeSwitch = (TwoStatePreference) findPreference(KEY_TAPTOWAKE_SWITCH);
         mTapToWakeSwitch.setEnabled(TapToWakeSwitch.isSupported());
-        mTapToWakeSwitch.setChecked(TapToWakeSwitch.isCurrentlyEnabled(this.getContext()));
+        mTapToWakeSwitch.setChecked(TapToWakeSwitch.isCurrentlyEnabled(this));
         mTapToWakeSwitch.setOnPreferenceChangeListener(new TapToWakeSwitch());
 
         if (!isAppInstalled(KEY_DEVICE_DOZE_PACKAGE_NAME)) {
@@ -74,8 +77,20 @@ public class DeviceSettings extends PreferenceFragment implements
     }
 
     @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        return super.onPreferenceTreeClick(preference);
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case android.R.id.home:
+            finish();
+            return true;
+        default:
+            break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     @Override
@@ -84,7 +99,7 @@ public class DeviceSettings extends PreferenceFragment implements
     }
 
     private boolean isAppInstalled(String uri) {
-        PackageManager pm = getContext().getPackageManager();
+        PackageManager pm = getPackageManager();
         try {
             pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
             return true;

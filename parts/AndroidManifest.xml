@@ -13,28 +13,17 @@
         android:targetSdkVersion="26" />
     <application
         android:label="@string/advanced_settings"
-        android:theme="@style/AppTheme"
+        android:theme="@android:style/Theme.DeviceDefault.Settings"
         android:supportsRtl="true" >
         <activity
-            android:name="org.omnirom.device.DeviceSettingsActivity"
-            android:exported="false"
+            android:name="org.omnirom.device.DeviceSettings"
+            android:exported="true"
             android:label="@string/advanced_settings" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity-alias
-            android:name="org.omnirom.device.DeviceSettings"
-            android:exported="true"
-            android:label="@string/advanced_settings"
-            android:targetActivity="DeviceSettingsActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity-alias>
         <receiver android:name="org.omnirom.device.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

@@ -18,6 +18,8 @@
     <string name="advanced_settings">Настройки устройства</string>
     <string name="category_system">Система</string>
     <string name="vib_strength_title_head">Сила вибрации</string>
+    <string name="vib_strength_summary_head">Установить силу вибрации</string>
+    <string name="vib_test">Тест</string>
     <string name="taptowake_title">Включение нажатием</string>
     <string name="taptowake_summary">Дважды нажмите в любом месте экрана, чтобы включить устройство</string>
 
