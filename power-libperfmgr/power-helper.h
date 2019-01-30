@@ -85,6 +85,9 @@ enum wlan_power_params {
 #define XO_VOTERS (MAX_PLATFORM_STATS - XO_VOTERS_START)
 #define VMIN_VOTERS 0
 
+#define INPUT_EVENT_WAKUP_MODE_OFF 4
+#define INPUT_EVENT_WAKUP_MODE_ON 5
+
 struct stat_pair {
     enum stats_type stat;
     const char *label;
