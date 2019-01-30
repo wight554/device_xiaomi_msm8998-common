@@ -1,5 +1,5 @@
-allow hal_power_default sysfs_sectouch:dir search;
-allow hal_power_default sysfs_sectouch:file w_file_perms;
+allow hal_power_default input_device:dir search;
+allow hal_power_default input_device:chr_file w_file_perms;
 
 allow hal_power_default sysfs_devfreq:dir search;
 allow hal_power_default sysfs_devfreq:file w_file_perms;

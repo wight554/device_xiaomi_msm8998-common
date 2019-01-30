@@ -40,6 +40,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#include <linux/input.h>
+
 #include <log/log.h>
 
 #include "power-helper.h"
@@ -53,7 +55,7 @@
 #endif
 
 #ifndef TAP_TO_WAKE_NODE
-#define TAP_TO_WAKE_NODE "/proc/touchpanel/double_tap_enable"
+#define TAP_TO_WAKE_NODE "/dev/input/event1"
 #endif
 
 #define ARRAY_SIZE(x) (sizeof((x))/sizeof((x)[0]))
@@ -90,37 +92,17 @@ struct stat_pair wlan_stat_map[] = {
     { WLAN_POWER_DEBUG_STATS, "POWER DEBUG STATS", wlan_power_stat_params, ARRAY_SIZE(wlan_power_stat_params) },
 };
 
-static int sysfs_write(char *path, char *s)
-{
-    char buf[80];
-    int len;
-    int ret = 0;
-    int fd = open(path, O_WRONLY);
-
-    if (fd < 0) {
-        strerror_r(errno, buf, sizeof(buf));
-        ALOGE("Error opening %s: %s\n", path, buf);
-        return -1 ;
-    }
-
-    len = write(fd, s, strlen(s));
-    if (len < 0) {
-        strerror_r(errno, buf, sizeof(buf));
-        ALOGE("Error writing to %s: %s\n", path, buf);
-
-        ret = -1;
-    }
-
-    close(fd);
-
-    return ret;
-}
-
 void set_feature(feature_t feature, int state) {
     switch (feature) {
-        case POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
-            sysfs_write(TAP_TO_WAKE_NODE, state ? "1" : "0");
-            break;
+        case POWER_FEATURE_DOUBLE_TAP_TO_WAKE: {
+            int fd = open(TAP_TO_WAKE_NODE, O_RDWR);
+            struct input_event ev;
+            ev.type = EV_SYN;
+            ev.code = SYN_CONFIG;
+            ev.value = state ? INPUT_EVENT_WAKUP_MODE_ON : INPUT_EVENT_WAKUP_MODE_OFF ;
+            write(fd, &ev, sizeof(ev));
+            close(fd);
+        } break;
         default:
             break;
     }
