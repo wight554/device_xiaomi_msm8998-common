@@ -18,12 +18,6 @@ on init
     chmod 0660 /dev/cpuset/camera-daemon/tasks
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
 
-on boot
-    # set default schedtune value for foreground/top-app (only affects EAS)
-    write /dev/stune/foreground/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 1
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-
 on charger
     write /sys/class/input/input0/enabled 0
     write /sys/class/input/input1/enabled 0
