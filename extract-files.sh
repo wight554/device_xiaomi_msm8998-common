@@ -65,33 +65,10 @@ function blob_fixup() {
     vendor/etc/permissions/qcrilhook.xml)
         sed -i 's|/system/framework/qcrilhook.jar|/vendor/framework/qcrilhook.jar|g' "${2}"
         ;;
-    vendor/lib/libMiCameraHal.so)
-        sed -i 's|system/etc/dualcamera.png|vendor/etc/dualcamera.png|g' "${2}"
-        ;;
-    vendor/lib/libFaceGrade.so)
-        patchelf --remove-needed "libandroid.so" "${2}"
-        ;;
-    vendor/lib/libarcsoft_beauty_shot.so)
-        patchelf --remove-needed "libandroid.so" "${2}"
-        ;;
-    vendor/lib/libmmcamera2_stats_modules.so)
-        patchelf --remove-needed "libandroid.so" "${2}"
-        ;;
-    vendor/lib/libmpbase.so)
-        patchelf --remove-needed "libandroid.so" "${2}"
-        ;;
-    vendor/lib64/lib-dplmedia.so)
-        patchelf --remove-needed "libmedia.so" "${2}"
-        ;;
-    vendor/lib/soundfx/libdirac.so)
-        patchelf --remove-needed "libmedia.so" "${2}"
-        ;;
     vendor/bin/mlipayd@1.1)
-        patchelf --remove-needed "libandroid_runtime.so" "${2}"
         patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
         ;;
     vendor/lib64/libmlipay@1.1.so)
-        patchelf --remove-needed "libandroid_runtime.so" "${2}"
         patchelf --remove-needed "vendor.xiaomi.hardware.mtdservice@1.0.so" "${2}"
         ;;
     esac
