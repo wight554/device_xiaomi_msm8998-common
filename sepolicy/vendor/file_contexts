@@ -31,9 +31,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service.xiaomi_msm8998-libperfmgr u:object_r:hal_power_default_exec:s0
 /sys/devices/virtual/graphics/fb0/idle_state                  u:object_r:sysfs_graphics:s0
 
-# Readmac
-/(vendor|system/vendor)/bin/readmac                           u:object_r:wcnss_service_exec:s0
-
 # Remote storage
 /sys/kernel/debug/rmt_storage/rmts                            u:object_r:debugfs_rmts:s0
 
