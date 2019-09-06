@@ -238,21 +238,15 @@ vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
 # DRM and SEE
-vendor/bin/qseecomd
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/librpmb.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libspl.so
-vendor/lib64/libssd.so
+vendor/bin/qseecomd|91428437fe6dce0ac640fa311d856b23cc17af8f
+vendor/lib64/libGPreqcancel.so|b156bc69b13dc4a67b7ce8fabdd3a05b5eb7c530
+vendor/lib64/libGPreqcancel_svc.so|83b575d054c10e68934279f307a46defaf347a25
+vendor/lib64/libQSEEComAPI.so|cdeacb29ff9efd78de2810a9a14e188b4ca83021
+vendor/lib64/libdrmfs.so|4efa1893258ea2def73f806bef73782565e37ce4
+vendor/lib64/libdrmtime.so|a64e2050e183664de0702fef865b3c0f66223662
+vendor/lib64/librpmb.so|1ebc831a3e0de707a078c8f80d727e1650ae4e95
+vendor/lib64/libspl.so|0cf185c22519bbae1e1232928fda151f538f9977
+vendor/lib64/libssd.so|cdf1085ebfa068193128ae91e47e46c3ff45677b
 
 # DRM (TUI)
 lib64/vendor.qti.hardware.tui_comm@1.0.so:vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
@@ -265,7 +259,7 @@ vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
 vendor/lib64/libwvhidl.so
 
 # Gatekeeper
-vendor/lib64/hw/gatekeeper.msm8998.so
+vendor/lib64/hw/gatekeeper.msm8998.so|cace8224973ea3e280636ece56cb49f01ebdf590
 
 # GPS
 vendor/bin/loc_launcher
@@ -399,7 +393,7 @@ vendor/firmware/ipa_fws.elf
 vendor/bin/msm_irqbalance
 
 # Keystore
-vendor/lib64/hw/keystore.msm8998.so
+vendor/lib64/hw/keystore.msm8998.so|834df7982427c992948a734a585d5ad6b898ab77
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8998.so
@@ -431,11 +425,17 @@ vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.1-service.rc
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
 vendor/lib64/libmfido.so
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 vendor/lib64/libmt.so
 vendor/lib64/libmt@1.2.so
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libsecureui_svcsock.so
+vendor/lib64/libSecureUILib.so
 vendor/lib64/libtida@1.1.so
 
 # NFC firmware
